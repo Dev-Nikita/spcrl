@@ -1,0 +1,533 @@
+claim_id,section,claim,experiment,metric,claimed,recomputed,status,analysis_script
+E1-soft-iid,2.1/2.2,soft prior AUPRC in iid,E1,auprc,0.967,0.9671,OK,analysis/claim_ledger.py
+E1-none-iid,2.1/2.2,prior-blind AUPRC in iid,E1,auprc,0.9,0.9001,OK,analysis/claim_ledger.py
+E1-soft-mech_ood,2.1/2.2,soft prior AUPRC in mech_ood,E1,auprc,0.96,0.9598,OK,analysis/claim_ledger.py
+E1-none-mech_ood,2.1/2.2,prior-blind AUPRC in mech_ood,E1,auprc,0.861,0.8607,OK,analysis/claim_ledger.py
+E1-soft-graph_ood,2.1/2.2,soft prior AUPRC in graph_ood,E1,auprc,0.832,0.8325,OK,analysis/claim_ledger.py
+E1-none-graph_ood,2.1/2.2,prior-blind AUPRC in graph_ood,E1,auprc,0.72,0.7195,OK,analysis/claim_ledger.py
+E1-soft-size_ood,2.1/2.2,soft prior AUPRC in size_ood,E1,auprc,0.97,0.9704,OK,analysis/claim_ledger.py
+E1-none-size_ood,2.1/2.2,prior-blind AUPRC in size_ood,E1,auprc,0.861,0.8609,OK,analysis/claim_ledger.py
+E1-soft-noise_ood,2.1/2.2,soft prior AUPRC in noise_ood,E1,auprc,0.941,0.9407,OK,analysis/claim_ledger.py
+E1-none-noise_ood,2.1/2.2,prior-blind AUPRC in noise_ood,E1,auprc,0.827,0.8275,OK,analysis/claim_ledger.py
+E1-soft-joint_ood,2.1/2.2,soft prior AUPRC in joint_ood,E1,auprc,0.821,0.8215,OK,analysis/claim_ledger.py
+E1-none-joint_ood,2.1/2.2,prior-blind AUPRC in joint_ood,E1,auprc,0.697,0.6969,OK,analysis/claim_ledger.py
+E1-seeds,2.1/2.2,training seeds in the headline comparison,E1,seeds,5.0,5.0000,OK,analysis/claim_ledger.py
+E1-blocks,2.1/2.2,paired observations per headline cell,E1,blocks,300.0,300.0000,OK,analysis/claim_ledger.py
+E1-base-pcorr,2.1,pcorr AUPRC in distribution,E1,auprc,0.41,0.4096,OK,analysis/claim_ledger.py
+E1-base-pc,2.1,pc AUPRC in distribution,E1,auprc,0.33,0.3303,OK,analysis/claim_ledger.py
+E1-base-notears_linear,2.1,notears_linear AUPRC in distribution,E1,auprc,0.367,0.3673,OK,analysis/claim_ledger.py
+E1-base-prior_only,2.1,prior_only AUPRC in distribution,E1,auprc,0.167,0.1667,OK,analysis/claim_ledger.py
+E1-base-notears_linear_hardmask,2.1,notears_linear_hardmask AUPRC in distribution,E1,auprc,0.549,0.5494,OK,analysis/claim_ledger.py
+E1-direct-spcrl_direct_soft,2.1,per-system spcrl_direct_soft AUPRC in distribution,E1,auprc,0.452,0.4523,OK,analysis/claim_ledger.py
+E1-direct-spcrl_direct_hard,2.1,per-system spcrl_direct_hard AUPRC in distribution,E1,auprc,0.44,0.4399,OK,analysis/claim_ledger.py
+E1-direct-spcrl_direct_none,2.1,per-system spcrl_direct_none AUPRC in distribution,E1,auprc,0.238,0.2378,OK,analysis/claim_ledger.py
+E2-iid-c0.0-soft,2.3,soft AUPRC at corruption 0.0 in iid,E2,auprc,0.969,0.9692,OK,analysis/claim_ledger.py
+E2-iid-c0.0-hard,2.3,hard AUPRC at corruption 0.0 in iid,E2,auprc,0.969,0.9687,OK,analysis/claim_ledger.py
+E2-iid-c0.0-none,2.3,none AUPRC at corruption 0.0 in iid,E2,auprc,0.898,0.8981,OK,analysis/claim_ledger.py
+E2-iid-c0.5-soft,2.3,soft AUPRC at corruption 0.5 in iid,E2,auprc,0.942,0.9424,OK,analysis/claim_ledger.py
+E2-iid-c0.5-hard,2.3,hard AUPRC at corruption 0.5 in iid,E2,auprc,0.513,0.5130,OK,analysis/claim_ledger.py
+E2-iid-c0.5-none,2.3,none AUPRC at corruption 0.5 in iid,E2,auprc,0.894,0.8943,OK,analysis/claim_ledger.py
+E2-graph_ood-c0.0-soft,2.3,soft AUPRC at corruption 0.0 in graph_ood,E2,auprc,0.824,0.8238,OK,analysis/claim_ledger.py
+E2-graph_ood-c0.0-hard,2.3,hard AUPRC at corruption 0.0 in graph_ood,E2,auprc,0.829,0.8292,OK,analysis/claim_ledger.py
+E2-graph_ood-c0.0-none,2.3,none AUPRC at corruption 0.0 in graph_ood,E2,auprc,0.712,0.7123,OK,analysis/claim_ledger.py
+E2-graph_ood-c0.5-soft,2.3,soft AUPRC at corruption 0.5 in graph_ood,E2,auprc,0.789,0.7887,OK,analysis/claim_ledger.py
+E2-graph_ood-c0.5-hard,2.3,hard AUPRC at corruption 0.5 in graph_ood,E2,auprc,0.455,0.4553,OK,analysis/claim_ledger.py
+E2-graph_ood-c0.5-none,2.3,none AUPRC at corruption 0.5 in graph_ood,E2,auprc,0.717,0.7173,OK,analysis/claim_ledger.py
+E2-seeds,2.3,training seeds in the corruption sweep,E2,seeds,5.0,5.0000,OK,analysis/claim_ledger.py
+E2-cstar-iid,2.3,"hard-mask crossover, matched/iid",E2,c_star,0.063,0.0634,OK,analysis/make_tables.py
+E2-cstar-ood,2.3,"hard-mask crossover, matched/graph_ood",E2,c_star,0.136,0.1359,OK,analysis/make_tables.py
+E2-cstar-drift-iid,2.3,"hard-mask crossover, drift/iid",E2,c_star,0.065,0.0647,OK,analysis/make_tables.py
+E2-cstar-drift-ood,2.3,"hard-mask crossover, drift/graph_ood",E2,c_star,0.146,0.1464,OK,analysis/make_tables.py
+E2-cstar-drift-soft,2.3,"soft-prior crossover under drift, in distribution",E2,c_star,0.088,0.0879,OK,analysis/make_tables.py
+E9-c0.0-hard,2.4,"hard AUPRC at c=0.0, in distribution",E9,auprc,0.966,0.9660,OK,analysis/claim_ledger.py
+E9-c0.0-none,2.4,"none AUPRC at c=0.0, in distribution",E9,auprc,0.899,0.8990,OK,analysis/claim_ledger.py
+E9-c0.0-soft_noenc,2.4,"soft_noenc AUPRC at c=0.0, in distribution",E9,auprc,0.952,0.9523,OK,analysis/claim_ledger.py
+E9-c0.0-soft_gate,2.4,"soft_gate AUPRC at c=0.0, in distribution",E9,auprc,0.952,0.9520,OK,analysis/claim_ledger.py
+E9-c0.0-soft,2.4,"soft AUPRC at c=0.0, in distribution",E9,auprc,0.968,0.9679,OK,analysis/claim_ledger.py
+E9-c0.5-hard,2.4,"hard AUPRC at c=0.5, in distribution",E9,auprc,0.518,0.5179,OK,analysis/claim_ledger.py
+E9-c0.5-none,2.4,"none AUPRC at c=0.5, in distribution",E9,auprc,0.899,0.8990,OK,analysis/claim_ledger.py
+E9-c0.5-soft_noenc,2.4,"soft_noenc AUPRC at c=0.5, in distribution",E9,auprc,0.927,0.9266,OK,analysis/claim_ledger.py
+E9-c0.5-soft_gate,2.4,"soft_gate AUPRC at c=0.5, in distribution",E9,auprc,0.927,0.9272,OK,analysis/claim_ledger.py
+E9-c0.5-soft,2.4,"soft AUPRC at c=0.5, in distribution",E9,auprc,0.943,0.9434,OK,analysis/claim_ledger.py
+E3-none-iid,2.5,"prior type none, in distribution",E3,auprc,0.913,0.9135,OK,analysis/claim_ledger.py
+E3-none-ood,2.5,"prior type none, unseen graph family",E3,auprc,0.724,0.7242,OK,analysis/claim_ledger.py
+E3-topology-iid,2.5,"prior type topology, in distribution",E3,auprc,0.939,0.9386,OK,analysis/claim_ledger.py
+E3-topology-ood,2.5,"prior type topology, unseen graph family",E3,auprc,0.743,0.7433,OK,analysis/claim_ledger.py
+E3-topology_type-iid,2.5,"prior type topology_type, in distribution",E3,auprc,0.952,0.9524,OK,analysis/claim_ledger.py
+E3-topology_type-ood,2.5,"prior type topology_type, unseen graph family",E3,auprc,0.764,0.7637,OK,analysis/claim_ledger.py
+E3-topology_dir-iid,2.5,"prior type topology_dir, in distribution",E3,auprc,0.974,0.9741,OK,analysis/claim_ledger.py
+E3-topology_dir-ood,2.5,"prior type topology_dir, unseen graph family",E3,auprc,0.821,0.8211,OK,analysis/claim_ledger.py
+E3-full-iid,2.5,"prior type full, in distribution",E3,auprc,0.974,0.9741,OK,analysis/claim_ledger.py
+E3-full-ood,2.5,"prior type full, unseen graph family",E3,auprc,0.821,0.8211,OK,analysis/claim_ledger.py
+E11-vs-iid,2.7,"varsortability, raw data, iid",E11,varsortability,0.852,0.8525,OK,analysis/claim_ledger.py
+E11-vs-graph_ood,2.7,"varsortability, raw data, graph_ood",E11,varsortability,0.869,0.8687,OK,analysis/claim_ledger.py
+E11-vs-mech_ood,2.7,"varsortability, raw data, mech_ood",E11,varsortability,0.927,0.9266,OK,analysis/claim_ledger.py
+E11-snr-raw-iid,2.7,"sortnregress AUPRC, raw, iid",E11,auprc,0.625,0.6245,OK,analysis/claim_ledger.py
+E11-snr-std-iid,2.7,"sortnregress AUPRC, standardised, iid",E11,auprc,0.219,0.2195,OK,analysis/claim_ledger.py
+E11-snr-raw-graph_ood,2.7,"sortnregress AUPRC, raw, graph_ood",E11,auprc,0.496,0.4963,OK,analysis/claim_ledger.py
+E11-snr-std-graph_ood,2.7,"sortnregress AUPRC, standardised, graph_ood",E11,auprc,0.187,0.1869,OK,analysis/claim_ledger.py
+E11-snr-raw-mech_ood,2.7,"sortnregress AUPRC, raw, mech_ood",E11,auprc,0.697,0.6972,OK,analysis/claim_ledger.py
+E11-snr-std-mech_ood,2.7,"sortnregress AUPRC, standardised, mech_ood",E11,auprc,0.231,0.2312,OK,analysis/claim_ledger.py
+E11-std-soft-iid,2.7,"soft prior, standardised, iid",E11,auprc,0.953,0.9533,OK,analysis/claim_ledger.py
+E11-std-none-iid,2.7,"prior-blind, standardised, iid",E11,auprc,0.874,0.8740,OK,analysis/claim_ledger.py
+E11-std-soft-graph_ood,2.7,"soft prior, standardised, graph_ood",E11,auprc,0.793,0.7928,OK,analysis/claim_ledger.py
+E11-std-none-graph_ood,2.7,"prior-blind, standardised, graph_ood",E11,auprc,0.683,0.6831,OK,analysis/claim_ledger.py
+E11-std-soft-mech_ood,2.7,"soft prior, standardised, mech_ood",E11,auprc,0.958,0.9584,OK,analysis/claim_ledger.py
+E11-std-none-mech_ood,2.7,"prior-blind, standardised, mech_ood",E11,auprc,0.876,0.8762,OK,analysis/claim_ledger.py
+E5-soft-d20,2.9,soft prior AUPRC at d=20,E5,auprc,0.9902,0.9902,OK,analysis/claim_ledger.py
+E5-none-d20,2.9,prior-blind AUPRC at d=20,E5,auprc,0.9521,0.9521,OK,analysis/claim_ledger.py
+E5-soft-d50,2.9,soft prior AUPRC at d=50,E5,auprc,0.9703,0.9703,OK,analysis/claim_ledger.py
+E5-none-d50,2.9,prior-blind AUPRC at d=50,E5,auprc,0.8601,0.8601,OK,analysis/claim_ledger.py
+E5-soft-d100,2.9,soft prior AUPRC at d=100,E5,auprc,0.9492,0.9492,OK,analysis/claim_ledger.py
+E5-none-d100,2.9,prior-blind AUPRC at d=100,E5,auprc,0.7829,0.7829,OK,analysis/claim_ledger.py
+E5-soft-d200,2.9,soft prior AUPRC at d=200,E5,auprc,0.9363,0.9363,OK,analysis/claim_ledger.py
+E5-none-d200,2.9,prior-blind AUPRC at d=200,E5,auprc,0.7492,0.7492,OK,analysis/claim_ledger.py
+E5-rho-d20,2.9,admissible fraction at d=20,E5,rho,0.3075,0.3075,OK,analysis/claim_ledger.py
+E5-rho-d200,2.9,admissible fraction at d=200,E5,rho,0.0607,0.0607,OK,analysis/claim_ledger.py
+E11-r2sort-iid,Discussion,"R2-sortability, iid",E11,r2_sortability,0.48,0.4842,OK,analysis/claim_ledger.py
+E11-r2sort-graph_ood,Discussion,"R2-sortability, graph_ood",E11,r2_sortability,0.6,0.6015,OK,analysis/claim_ledger.py
+GATE-K1-G4-rho,Methods,"mean |rho| between unconnected services' throughputs, K1",gates,rho,0.992,0.9920,OK,analysis/external_gates.py
+GATE-K1-G4-fails,Methods,K1 fails the K2 manipulation check,gates,bool,0.0,0.0000,OK,analysis/external_gates.py
+E16-C-m0.0,2.11,compatibility statistic at m=0.0,E16,C,0.164,0.1638,OK,analysis/e16_mismatch.py
+E16-C-m0.2,2.11,compatibility statistic at m=0.2,E16,C,0.109,0.1086,OK,analysis/e16_mismatch.py
+E16-C-m0.4,2.11,compatibility statistic at m=0.4,E16,C,0.081,0.0806,OK,analysis/e16_mismatch.py
+E16-C-m0.6,2.11,compatibility statistic at m=0.6,E16,C,0.077,0.0772,OK,analysis/e16_mismatch.py
+E16-C-m0.8,2.11,compatibility statistic at m=0.8,E16,C,0.053,0.0527,OK,analysis/e16_mismatch.py
+E16-C-m0.95,2.11,compatibility statistic at m=0.95,E16,C,0.056,0.0558,OK,analysis/e16_mismatch.py
+E16-adv-m0.0,2.11,soft prior advantage in distribution at m=0.0,E16,auprc,0.059,0.0595,OK,analysis/e16_mismatch.py
+E16-adv-m0.2,2.11,soft prior advantage in distribution at m=0.2,E16,auprc,0.133,0.1333,OK,analysis/e16_mismatch.py
+E16-adv-m0.4,2.11,soft prior advantage in distribution at m=0.4,E16,auprc,0.141,0.1407,OK,analysis/e16_mismatch.py
+E16-adv-m0.6,2.11,soft prior advantage in distribution at m=0.6,E16,auprc,0.197,0.1971,OK,analysis/e16_mismatch.py
+E16-adv-m0.8,2.11,soft prior advantage in distribution at m=0.8,E16,auprc,0.247,0.2470,OK,analysis/e16_mismatch.py
+E16-adv-m0.95,2.11,soft prior advantage in distribution at m=0.95,E16,auprc,0.344,0.3437,OK,analysis/e16_mismatch.py
+E16-H1,2.11,Spearman rho between C and the mismatch level,E16,rho,-0.943,-0.9429,OK,analysis/e16_mismatch.py
+E16-H2,2.11,Spearman rho between the prior advantage and the mismatch level,E16,rho,1.0,1.0000,OK,analysis/e16_mismatch.py
+E16-H3,2.11,Spearman rho between the prior advantage and C,E16,rho,-0.943,-0.9429,OK,analysis/e16_mismatch.py
+E17-min-gap,2.11,smallest soft-prior advantage over the mismatch x deletion grid,E17,auprc,0.046,0.0455,OK,analysis/claim_ledger.py
+E17-max-gap,2.11,largest soft-prior advantage over the mismatch x deletion grid,E17,auprc,0.344,0.3437,OK,analysis/claim_ledger.py
+E17-cells,2.11,cells in the mismatch x deletion grid,E17,cells,18.0,18.0000,OK,analysis/claim_ledger.py
+E18-m0.0-c0.2-iid,2.11,"soft prior advantage under drift at m=0.0, c=0.2, iid",E18,auprc,-0.043,-0.0430,OK,analysis/claim_ledger.py
+E18-m0.0-c0.5-iid,2.11,"soft prior advantage under drift at m=0.0, c=0.5, iid",E18,auprc,-0.228,-0.2282,OK,analysis/claim_ledger.py
+E18-m0.0-c0.5-graph_ood,2.11,"soft prior advantage under drift at m=0.0, c=0.5, graph_ood",E18,auprc,-0.2,-0.1998,OK,analysis/claim_ledger.py
+E18-m0.95-c0.0-iid,2.11,"soft prior advantage under drift at m=0.95, c=0.0, iid",E18,auprc,0.386,0.3860,OK,analysis/claim_ledger.py
+E4-oracle-top1,2.6,oracle Top-1 in distribution,E4,top1,0.798,0.7975,OK,analysis/claim_ledger.py
+E4-oracle-regret,2.6,oracle normalised regret in distribution,E4,norm_regret,0.31,0.3104,OK,analysis/claim_ledger.py
+E4-spcrl_soft-top1,2.6,spcrl_soft Top-1 in distribution,E4,top1,0.804,0.8037,OK,analysis/claim_ledger.py
+E4-spcrl_soft-regret,2.6,spcrl_soft normalised regret in distribution,E4,norm_regret,0.292,0.2920,OK,analysis/claim_ledger.py
+E4-spcrl_hard-top1,2.6,spcrl_hard Top-1 in distribution,E4,top1,0.788,0.7882,OK,analysis/claim_ledger.py
+E4-spcrl_hard-regret,2.6,spcrl_hard normalised regret in distribution,E4,norm_regret,0.303,0.3032,OK,analysis/claim_ledger.py
+E4-spcrl_none-top1,2.6,spcrl_none Top-1 in distribution,E4,top1,0.801,0.8006,OK,analysis/claim_ledger.py
+E4-spcrl_none-regret,2.6,spcrl_none normalised regret in distribution,E4,norm_regret,0.325,0.3252,OK,analysis/claim_ledger.py
+E4-notears_linear-top1,2.6,notears_linear Top-1 in distribution,E4,top1,0.626,0.6262,OK,analysis/claim_ledger.py
+E4-notears_linear-regret,2.6,notears_linear normalised regret in distribution,E4,norm_regret,0.422,0.4216,OK,analysis/claim_ledger.py
+E4-pcorr-top1,2.6,pcorr Top-1 in distribution,E4,top1,0.698,0.6978,OK,analysis/claim_ledger.py
+E4-pcorr-regret,2.6,pcorr normalised regret in distribution,E4,norm_regret,0.478,0.4782,OK,analysis/claim_ledger.py
+E4-prior_only-top1,2.6,prior_only Top-1 in distribution,E4,top1,0.66,0.6604,OK,analysis/claim_ledger.py
+E4-prior_only-regret,2.6,prior_only normalised regret in distribution,E4,norm_regret,0.443,0.4429,OK,analysis/claim_ledger.py
+E4-anomaly_no_structure-top1,2.6,anomaly_no_structure Top-1 in distribution,E4,top1,0.607,0.6075,OK,analysis/claim_ledger.py
+E4-ties-oracle,2.6,"tied candidate actions, true-graph reference",E4,n_tied,1.6,1.5950,OK,analysis/claim_ledger.py
+E4-ties-pcorr,2.6,"tied candidate actions, partial correlation",E4,n_tied,7.9,7.9221,OK,analysis/claim_ledger.py
+E12-faults,2.6,evaluated faults in the decision-relevance test,E12,faults,753.0,753.0000,OK,analysis/claim_ledger.py
+E12-rho-global,2.6,"rank correlation, global structural distance vs ranking error",E12,rho,-0.09,-0.0909,OK,analysis/claim_ledger.py
+E12-rho-decision,2.6,"rank correlation, decision-restricted distance vs ranking error",E12,rho,-0.02,-0.0208,OK,analysis/claim_ledger.py
+E12-n-relevant,2.6,nodes in the decision-relevant subgraph,E12,nodes,4.5,4.5020,OK,analysis/claim_ledger.py
+E7-gap-r2.0-iid,2.8,"soft prior advantage at coarseness 2.0x, iid",E7,auprc,0.08,0.0804,OK,analysis/claim_ledger.py
+E7-gap-r2.0-graph_ood,2.8,"soft prior advantage at coarseness 2.0x, graph_ood",E7,auprc,0.248,0.2481,OK,analysis/claim_ledger.py
+E7-gap-r5.0-iid,2.8,"soft prior advantage at coarseness 5.0x, iid",E7,auprc,0.058,0.0576,OK,analysis/claim_ledger.py
+E7-gap-r5.0-graph_ood,2.8,"soft prior advantage at coarseness 5.0x, graph_ood",E7,auprc,0.12,0.1202,OK,analysis/claim_ledger.py
+E7-gap-r10.0-iid,2.8,"soft prior advantage at coarseness 10.0x, iid",E7,auprc,0.029,0.0289,OK,analysis/claim_ledger.py
+E7-gap-r10.0-graph_ood,2.8,"soft prior advantage at coarseness 10.0x, graph_ood",E7,auprc,0.009,0.0089,OK,analysis/claim_ledger.py
+E7-gap-r20.0-iid,2.8,"soft prior advantage at coarseness 20.0x, iid",E7,auprc,-0.001,-0.0012,OK,analysis/claim_ledger.py
+E7-gap-r20.0-graph_ood,2.8,"soft prior advantage at coarseness 20.0x, graph_ood",E7,auprc,0.002,0.0015,OK,analysis/claim_ledger.py
+E7-ratio-2.0,2.8,realised admissible/true ratio at 2.0x,E7,ratio,3.0,3.0000,OK,analysis/claim_ledger.py
+E7-ratio-5.0,2.8,realised admissible/true ratio at 5.0x,E7,ratio,6.0,6.0000,OK,analysis/claim_ledger.py
+E7-ratio-10.0,2.8,realised admissible/true ratio at 10.0x,E7,ratio,10.59,10.5889,OK,analysis/claim_ledger.py
+E7-ratio-20.0,2.8,realised admissible/true ratio at 20.0x,E7,ratio,14.95,14.9497,OK,analysis/claim_ledger.py
+E15-rows,2.2,paired observations in the fold rotation,E15,rows,1920.0,1920.0000,OK,analysis/e15_folds.py
+E15-heldout-er,2.2,soft prior advantage on the held-out er family,E15,auprc,0.081,0.0815,OK,analysis/e15_folds.py
+E15-heldout-sf,2.2,soft prior advantage on the held-out sf family,E15,auprc,0.096,0.0963,OK,analysis/e15_folds.py
+E15-heldout-modular,2.2,soft prior advantage on the held-out modular family,E15,auprc,0.096,0.0962,OK,analysis/e15_folds.py
+E15-heldout-hier,2.2,soft prior advantage on the held-out hier family,E15,auprc,0.128,0.1279,OK,analysis/e15_folds.py
+E15-hier-none,2.2,prior-blind AUPRC on held-out hierarchical graphs,E15,auprc,0.694,0.6944,OK,analysis/e15_folds.py
+E15-folds-bigger,2.2,folds where the held-out advantage exceeds the in-distribution one,E15,folds,4.0,4.0000,OK,analysis/e15_folds.py
+E14-rows,2.8,paired observations in the coverage sweep,E14,rows,1920.0,1920.0000,OK,analysis/e14_missing.py
+E14-iid|m=0.0|soft,2.8,"soft prior advantage, iid|m=0.0|soft",E14,auprc,0.07,0.0700,OK,analysis/e14_missing.py
+E14-iid|m=0.25|soft,2.8,"soft prior advantage, iid|m=0.25|soft",E14,auprc,0.034,0.0340,OK,analysis/e14_missing.py
+E14-iid|m=0.5|soft,2.8,"soft prior advantage, iid|m=0.5|soft",E14,auprc,0.017,0.0171,OK,analysis/e14_missing.py
+E14-iid|m=0.75|soft,2.8,"soft prior advantage, iid|m=0.75|soft",E14,auprc,0.002,0.0023,OK,analysis/e14_missing.py
+E14-graph_ood|m=0.0|soft,2.8,"soft prior advantage, graph_ood|m=0.0|soft",E14,auprc,0.113,0.1135,OK,analysis/e14_missing.py
+E14-graph_ood|m=0.25|soft,2.8,"soft prior advantage, graph_ood|m=0.25|soft",E14,auprc,0.048,0.0477,OK,analysis/e14_missing.py
+E14-graph_ood|m=0.5|soft,2.8,"soft prior advantage, graph_ood|m=0.5|soft",E14,auprc,0.025,0.0249,OK,analysis/e14_missing.py
+E14-graph_ood|m=0.75|soft,2.8,"soft prior advantage, graph_ood|m=0.75|soft",E14,auprc,0.011,0.0105,OK,analysis/e14_missing.py
+E14-rho-iid|m=0.0,2.8,"admissible fraction, iid|m=0.0",E14,rho,0.31,0.3083,OK,analysis/e14_missing.py
+E14-rho-iid|m=0.25,2.8,"admissible fraction, iid|m=0.25",E14,rho,0.58,0.5760,OK,analysis/e14_missing.py
+E14-rho-iid|m=0.5,2.8,"admissible fraction, iid|m=0.5",E14,rho,0.8,0.7974,OK,analysis/e14_missing.py
+E14-rho-iid|m=0.75,2.8,"admissible fraction, iid|m=0.75",E14,rho,0.92,0.9210,OK,analysis/e14_missing.py
+E14-hard-never-negative,2.8,worst hard-mask advantage over all coverage levels,E14,auprc,0.003,0.0029,OK,analysis/e14_missing.py
+E13-rows,2.3,paired observations in the operator sweep,E13,rows,9600.0,9600.0000,OK,analysis/e13_operators.py
+E13-matched|iid|add|c=0.1|hard,2.3,"prior advantage, matched|iid|add|c=0.1|hard",E13,auprc,0.057,0.0569,OK,analysis/e13_operators.py
+E13-matched|iid|add|c=0.2|hard,2.3,"prior advantage, matched|iid|add|c=0.2|hard",E13,auprc,0.073,0.0733,OK,analysis/e13_operators.py
+E13-matched|iid|add|c=0.5|hard,2.3,"prior advantage, matched|iid|add|c=0.5|hard",E13,auprc,0.075,0.0746,OK,analysis/e13_operators.py
+E13-matched|iid|add|c=0.1|soft,2.3,"prior advantage, matched|iid|add|c=0.1|soft",E13,auprc,0.056,0.0560,OK,analysis/e13_operators.py
+E13-matched|iid|add|c=0.2|soft,2.3,"prior advantage, matched|iid|add|c=0.2|soft",E13,auprc,0.077,0.0767,OK,analysis/e13_operators.py
+E13-matched|iid|add|c=0.5|soft,2.3,"prior advantage, matched|iid|add|c=0.5|soft",E13,auprc,0.074,0.0743,OK,analysis/e13_operators.py
+E13-matched|iid|clean|c=0.0|hard,2.3,"prior advantage, matched|iid|clean|c=0.0|hard",E13,auprc,0.07,0.0704,OK,analysis/e13_operators.py
+E13-matched|iid|delete|c=0.1|hard,2.3,"prior advantage, matched|iid|delete|c=0.1|hard",E13,auprc,-0.04,-0.0405,OK,analysis/e13_operators.py
+E13-matched|iid|delete|c=0.2|hard,2.3,"prior advantage, matched|iid|delete|c=0.2|hard",E13,auprc,-0.112,-0.1121,OK,analysis/e13_operators.py
+E13-matched|iid|delete|c=0.5|hard,2.3,"prior advantage, matched|iid|delete|c=0.5|hard",E13,auprc,-0.386,-0.3864,OK,analysis/e13_operators.py
+E13-matched|iid|delete|c=0.1|soft,2.3,"prior advantage, matched|iid|delete|c=0.1|soft",E13,auprc,0.048,0.0482,OK,analysis/e13_operators.py
+E13-matched|iid|delete|c=0.2|soft,2.3,"prior advantage, matched|iid|delete|c=0.2|soft",E13,auprc,0.065,0.0645,OK,analysis/e13_operators.py
+E13-matched|iid|delete|c=0.5|soft,2.3,"prior advantage, matched|iid|delete|c=0.5|soft",E13,auprc,0.05,0.0499,OK,analysis/e13_operators.py
+E13-drift|iid|delete|c=0.2|soft,2.3,"prior advantage, drift|iid|delete|c=0.2|soft",E13,auprc,-0.03,-0.0299,OK,analysis/e13_operators.py
+E13-drift|iid|delete|c=0.5|soft,2.3,"prior advantage, drift|iid|delete|c=0.5|soft",E13,auprc,-0.197,-0.1966,OK,analysis/e13_operators.py
+E13-drift|iid|add|c=0.2|soft,2.3,"prior advantage, drift|iid|add|c=0.2|soft",E13,auprc,0.074,0.0744,OK,analysis/e13_operators.py
+E13-drift|iid|add|c=0.5|soft,2.3,"prior advantage, drift|iid|add|c=0.5|soft",E13,auprc,0.073,0.0727,OK,analysis/e13_operators.py
+E13-rev-eq-matched|iid|reverse|c=0.5|hard,2.3,reversal coincides with deletion to three decimals,E13,auprc,-0.386,-0.3860,OK,analysis/e13_operators.py
+E13-rev-eq-matched|iid|reverse|c=0.2|soft,2.3,reversal coincides with deletion to three decimals,E13,auprc,0.065,0.0650,OK,analysis/e13_operators.py
+E6-rows,2.6,evaluated rows in the corruption-downstream run,E6,rows,4158.0,4158.0000,OK,analysis/claim_ledger.py
+E6-seeds,2.6,training seeds,E6,seeds,3.0,3.0000,OK,analysis/claim_ledger.py
+E6-spcrl_soft-c0.0,2.6,spcrl_soft Top-1 in distribution at c=0.0,E6,top1,0.703,0.7027,OK,analysis/claim_ledger.py
+E6-spcrl_hard-c0.0,2.6,spcrl_hard Top-1 in distribution at c=0.0,E6,top1,0.667,0.6667,OK,analysis/claim_ledger.py
+E6-spcrl_none-c0.0,2.6,spcrl_none Top-1 in distribution at c=0.0,E6,top1,0.667,0.6667,OK,analysis/claim_ledger.py
+E6-spcrl_soft-c0.2,2.6,spcrl_soft Top-1 in distribution at c=0.2,E6,top1,0.739,0.7387,OK,analysis/claim_ledger.py
+E6-spcrl_hard-c0.2,2.6,spcrl_hard Top-1 in distribution at c=0.2,E6,top1,0.694,0.6937,OK,analysis/claim_ledger.py
+E6-spcrl_none-c0.2,2.6,spcrl_none Top-1 in distribution at c=0.2,E6,top1,0.703,0.7027,OK,analysis/claim_ledger.py
+E6-spcrl_soft-c0.5,2.6,spcrl_soft Top-1 in distribution at c=0.5,E6,top1,0.64,0.6396,OK,analysis/claim_ledger.py
+E6-spcrl_hard-c0.5,2.6,spcrl_hard Top-1 in distribution at c=0.5,E6,top1,0.532,0.5315,OK,analysis/claim_ledger.py
+E6-spcrl_none-c0.5,2.6,spcrl_none Top-1 in distribution at c=0.5,E6,top1,0.631,0.6306,OK,analysis/claim_ledger.py
+E6-hard-vs-soft-p,2.6,"Holm-corrected p, hard mask vs soft prior at c=0.5",E6,p,0.005,0.0054,OK,analysis/claim_ledger.py
+E6-hard-vs-none-p,2.6,"uncorrected p, hard mask vs prior-blind at c=0.5",E6,p,0.008,0.0076,OK,analysis/claim_ledger.py
+E6-soft-none-gap,2.6,soft minus prior-blind Top-1 at c=0.5,E6,top1,0.009,0.0090,OK,analysis/claim_ledger.py
+E6-soft-none-blocks,2.6,blocks on which soft and prior-blind differ at c=0.5,E6,blocks,3.0,3.0000,OK,analysis/claim_ledger.py
+E6-ood-c02-spcrl_hard,2.6,spcrl_hard Top-1 under graph shift at c=0.2,E6,top1,0.683,0.6833,OK,analysis/claim_ledger.py
+E6-ood-c02-spcrl_soft,2.6,spcrl_soft Top-1 under graph shift at c=0.2,E6,top1,0.783,0.7833,OK,analysis/claim_ledger.py
+E6-ood-c02-spcrl_none,2.6,spcrl_none Top-1 under graph shift at c=0.2,E6,top1,0.767,0.7667,OK,analysis/claim_ledger.py
+E8-cells,2.8,phase-diagram cells,E8,cells,48.0,48.0000,OK,analysis/e8_envelope.py
+E8-rows,2.8,paired observations in the phase diagram,E8,rows,11520.0,11520.0000,OK,analysis/e8_envelope.py
+E8-soft-r2.0-c0.0,2.8,"soft prior advantage at r=2.0, c=0.0",E8,auprc,0.156,0.1559,OK,analysis/e8_envelope.py
+E8-soft-r5.0-c0.0,2.8,"soft prior advantage at r=5.0, c=0.0",E8,auprc,0.085,0.0849,OK,analysis/e8_envelope.py
+E8-soft-r10.0-c0.0,2.8,"soft prior advantage at r=10.0, c=0.0",E8,auprc,0.027,0.0273,OK,analysis/e8_envelope.py
+E8-soft-r20.0-c0.0,2.8,"soft prior advantage at r=20.0, c=0.0",E8,auprc,0.0,0.0005,OK,analysis/e8_envelope.py
+E8-soft-r2.0-c0.5,2.8,"soft prior advantage at r=2.0, c=0.5",E8,auprc,0.118,0.1176,OK,analysis/e8_envelope.py
+E8-soft-r5.0-c0.5,2.8,"soft prior advantage at r=5.0, c=0.5",E8,auprc,0.051,0.0506,OK,analysis/e8_envelope.py
+E8-soft-r10.0-c0.5,2.8,"soft prior advantage at r=10.0, c=0.5",E8,auprc,0.015,0.0146,OK,analysis/e8_envelope.py
+E8-soft-r5.0-c0.2,2.8,"soft prior advantage at r=5.0, c=0.2",E8,auprc,0.056,0.0559,OK,analysis/e8_envelope.py
+E8-hard-r5-c0.2,2.8,"hard mask deficit at r=5, c=0.2",E8,auprc,-0.081,-0.0812,OK,analysis/e8_envelope.py
+E8-cross-r2.0,2.8,hard-mask crossover corruption at r=2.0,E8,crossover,0.163,0.1631,OK,analysis/e8_envelope.py
+E8-cross-r5.0,2.8,hard-mask crossover corruption at r=5.0,E8,crossover,0.098,0.0984,OK,analysis/e8_envelope.py
+E8-cross-r10.0,2.8,hard-mask crossover corruption at r=10.0,E8,crossover,0.036,0.0357,OK,analysis/e8_envelope.py
+E10-spcrl_none-top1,2.10,spcrl_none Top-1 on the Kubernetes campaign,E10,top1,0.375,0.3750,OK,analysis/claim_ledger.py
+E10-spcrl_none-mrr,2.10,spcrl_none MRR on the Kubernetes campaign,E10,mrr,0.651,0.6512,OK,analysis/claim_ledger.py
+E10-spcrl_soft-top1,2.10,spcrl_soft Top-1 on the Kubernetes campaign,E10,top1,0.292,0.2917,OK,analysis/claim_ledger.py
+E10-spcrl_soft-mrr,2.10,spcrl_soft MRR on the Kubernetes campaign,E10,mrr,0.587,0.5869,OK,analysis/claim_ledger.py
+E10-spcrl_hard-top1,2.10,spcrl_hard Top-1 on the Kubernetes campaign,E10,top1,0.319,0.3194,OK,analysis/claim_ledger.py
+E10-spcrl_hard-mrr,2.10,spcrl_hard MRR on the Kubernetes campaign,E10,mrr,0.601,0.6009,OK,analysis/claim_ledger.py
+E10-prior_only-top1,2.10,prior_only Top-1 on the Kubernetes campaign,E10,top1,0.333,0.3333,OK,analysis/claim_ledger.py
+E10-prior_only-mrr,2.10,prior_only MRR on the Kubernetes campaign,E10,mrr,0.602,0.6020,OK,analysis/claim_ledger.py
+E10-anomaly_no_structure-top1,2.10,anomaly_no_structure Top-1 on the Kubernetes campaign,E10,top1,0.25,0.2500,OK,analysis/claim_ledger.py
+E10-anomaly_no_structure-mrr,2.10,anomaly_no_structure MRR on the Kubernetes campaign,E10,mrr,0.512,0.5122,OK,analysis/claim_ledger.py
+E10-soft-c0.0,2.10,soft prior Top-1 at prior corruption c=0.0,E10,top1,0.292,0.2917,OK,analysis/claim_ledger.py
+E10-soft-c0.2,2.10,soft prior Top-1 at prior corruption c=0.2,E10,top1,0.306,0.3056,OK,analysis/claim_ledger.py
+E10-soft-c0.5,2.10,soft prior Top-1 at prior corruption c=0.5,E10,top1,0.347,0.3472,OK,analysis/claim_ledger.py
+E10-paired-spcrl_none-anomaly_no_structure-top1,2.10,paired spcrl_none - anomaly_no_structure (top1) over 24 faults,E10,top1,0.125,0.1250,OK,analysis/e10_paired.py
+E10-paired-spcrl_none-anomaly_no_structure-top1-cilo,2.10,bootstrap CI lo for spcrl_none - anomaly_no_structure (top1),E10,top1,0.028,0.0278,OK,analysis/e10_paired.py
+E10-paired-spcrl_none-anomaly_no_structure-top1-cihi,2.10,bootstrap CI hi for spcrl_none - anomaly_no_structure (top1),E10,top1,0.236,0.2361,OK,analysis/e10_paired.py
+E10-paired-spcrl_none-anomaly_no_structure-mrr,2.10,paired spcrl_none - anomaly_no_structure (mrr) over 24 faults,E10,mrr,0.139,0.1390,OK,analysis/e10_paired.py
+E10-paired-spcrl_none-anomaly_no_structure-mrr-cilo,2.10,bootstrap CI lo for spcrl_none - anomaly_no_structure (mrr),E10,mrr,0.059,0.0591,OK,analysis/e10_paired.py
+E10-paired-spcrl_none-anomaly_no_structure-mrr-cihi,2.10,bootstrap CI hi for spcrl_none - anomaly_no_structure (mrr),E10,mrr,0.229,0.2288,OK,analysis/e10_paired.py
+E10-paired-spcrl_soft-spcrl_none-top1,2.10,paired spcrl_soft - spcrl_none (top1) over 24 faults,E10,top1,-0.083,-0.0833,OK,analysis/e10_paired.py
+E10-paired-spcrl_soft-spcrl_none-top1-cilo,2.10,bootstrap CI lo for spcrl_soft - spcrl_none (top1),E10,top1,-0.167,-0.1667,OK,analysis/e10_paired.py
+E10-paired-spcrl_soft-spcrl_none-top1-cihi,2.10,bootstrap CI hi for spcrl_soft - spcrl_none (top1),E10,top1,-0.014,-0.0139,OK,analysis/e10_paired.py
+E10-paired-spcrl_soft-spcrl_none-mrr,2.10,paired spcrl_soft - spcrl_none (mrr) over 24 faults,E10,mrr,-0.064,-0.0643,OK,analysis/e10_paired.py
+E10-paired-spcrl_soft-spcrl_none-mrr-cilo,2.10,bootstrap CI lo for spcrl_soft - spcrl_none (mrr),E10,mrr,-0.135,-0.1352,OK,analysis/e10_paired.py
+E10-paired-spcrl_soft-spcrl_none-mrr-cihi,2.10,bootstrap CI hi for spcrl_soft - spcrl_none (mrr),E10,mrr,-0.008,-0.0075,OK,analysis/e10_paired.py
+E10-paired-spcrl_hard-spcrl_none-top1,2.10,paired spcrl_hard - spcrl_none (top1) over 24 faults,E10,top1,-0.056,-0.0556,OK,analysis/e10_paired.py
+E10-paired-spcrl_hard-spcrl_none-top1-cilo,2.10,bootstrap CI lo for spcrl_hard - spcrl_none (top1),E10,top1,-0.153,-0.1528,OK,analysis/e10_paired.py
+E10-paired-spcrl_hard-spcrl_none-top1-cihi,2.10,bootstrap CI hi for spcrl_hard - spcrl_none (top1),E10,top1,0.042,0.0417,OK,analysis/e10_paired.py
+K2b-G4-rho,2.7,unconnected throughput |rho| in K2b,K2b,gate,0.157,0.1573,OK,analysis/external_gates.py
+K2b-G3-r2,2.7,median cross-variable R2 excl. throughput in K2b,K2b,gate,0.151,0.1508,OK,analysis/external_gates.py
+K2b-n-nominal,2.7,nominal samples in K2b,K2b,gate,3606.0,3606.0000,OK,analysis/external_gates.py
+K2b-passed,2.7,K2b passes all gates,K2b,gate,1.0,1.0000,OK,analysis/external_gates.py
+K2b-blind-anomaly,2.7,prior-blind minus anomaly Top-1 in K2b,K2b,top1,0.167,0.1667,OK,analysis/external_controls.py
+K2b-blind-anomaly-cilo,2.7,bootstrap CI lo for prior-blind minus anomaly in K2b,K2b,top1,0.014,0.0139,OK,analysis/external_controls.py
+K2b-blind-anomaly-cihi,2.7,bootstrap CI hi for prior-blind minus anomaly in K2b,K2b,top1,0.347,0.3472,OK,analysis/external_controls.py
+K2b-top1-soft|P1_topology,2.7,K2b Top-1 under soft|P1_topology,K2b,top1,0.528,0.5278,OK,analysis/external_controls.py
+K2b-vsP5-soft|P1_topology,2.7,K2b soft|P1_topology minus prior-blind,K2b,top1,-0.014,-0.0139,OK,analysis/external_controls.py
+K2b-vsP5-soft|P1_topology-cilo,2.7,K2b soft|P1_topology minus prior-blind-cilo,K2b,top1,-0.056,-0.0556,OK,analysis/external_controls.py
+K2b-vsP5-soft|P1_topology-cihi,2.7,K2b soft|P1_topology minus prior-blind-cihi,K2b,top1,0.028,0.0278,OK,analysis/external_controls.py
+K2b-top1-hard|P1_topology,2.7,K2b Top-1 under hard|P1_topology,K2b,top1,0.556,0.5556,OK,analysis/external_controls.py
+K2b-vsP5-hard|P1_topology,2.7,K2b hard|P1_topology minus prior-blind,K2b,top1,0.014,0.0139,OK,analysis/external_controls.py
+K2b-vsP5-hard|P1_topology-cilo,2.7,K2b hard|P1_topology minus prior-blind-cilo,K2b,top1,-0.069,-0.0694,OK,analysis/external_controls.py
+K2b-vsP5-hard|P1_topology-cihi,2.7,K2b hard|P1_topology minus prior-blind-cihi,K2b,top1,0.097,0.0972,OK,analysis/external_controls.py
+K2b-top1-soft|P2_semantic,2.7,K2b Top-1 under soft|P2_semantic,K2b,top1,0.556,0.5556,OK,analysis/external_controls.py
+K2b-vsP5-soft|P2_semantic,2.7,K2b soft|P2_semantic minus prior-blind,K2b,top1,0.014,0.0139,OK,analysis/external_controls.py
+K2b-vsP5-soft|P2_semantic-cilo,2.7,K2b soft|P2_semantic minus prior-blind-cilo,K2b,top1,-0.097,-0.0972,OK,analysis/external_controls.py
+K2b-vsP5-soft|P2_semantic-cihi,2.7,K2b soft|P2_semantic minus prior-blind-cihi,K2b,top1,0.111,0.1111,OK,analysis/external_controls.py
+K2b-top1-soft|P3_random,2.7,K2b Top-1 under soft|P3_random,K2b,top1,0.5,0.5000,OK,analysis/external_controls.py
+K2b-vsP5-soft|P3_random,2.7,K2b soft|P3_random minus prior-blind,K2b,top1,-0.042,-0.0417,OK,analysis/external_controls.py
+K2b-vsP5-soft|P3_random-cilo,2.7,K2b soft|P3_random minus prior-blind-cilo,K2b,top1,-0.139,-0.1389,OK,analysis/external_controls.py
+K2b-vsP5-soft|P3_random-cihi,2.7,K2b soft|P3_random minus prior-blind-cihi,K2b,top1,0.028,0.0278,OK,analysis/external_controls.py
+K2b-top1-soft|P3b_random_at_P2_density,2.7,K2b Top-1 under soft|P3b_random_at_P2_density,K2b,top1,0.528,0.5278,OK,analysis/external_controls.py
+K2b-vsP5-soft|P3b_random_at_P2_density,2.7,K2b soft|P3b_random_at_P2_density minus prior-blind,K2b,top1,-0.014,-0.0139,OK,analysis/external_controls.py
+K2b-vsP5-soft|P3b_random_at_P2_density-cilo,2.7,K2b soft|P3b_random_at_P2_density minus prior-blind-cilo,K2b,top1,-0.056,-0.0556,OK,analysis/external_controls.py
+K2b-vsP5-soft|P3b_random_at_P2_density-cihi,2.7,K2b soft|P3b_random_at_P2_density minus prior-blind-cihi,K2b,top1,0.028,0.0278,OK,analysis/external_controls.py
+K2b-top1-soft|P4_degree_shuffled,2.7,K2b Top-1 under soft|P4_degree_shuffled,K2b,top1,0.514,0.5139,OK,analysis/external_controls.py
+K2b-vsP5-soft|P4_degree_shuffled,2.7,K2b soft|P4_degree_shuffled minus prior-blind,K2b,top1,-0.028,-0.0278,OK,analysis/external_controls.py
+K2b-vsP5-soft|P4_degree_shuffled-cilo,2.7,K2b soft|P4_degree_shuffled minus prior-blind-cilo,K2b,top1,-0.097,-0.0972,OK,analysis/external_controls.py
+K2b-vsP5-soft|P4_degree_shuffled-cihi,2.7,K2b soft|P4_degree_shuffled minus prior-blind-cihi,K2b,top1,0.028,0.0278,OK,analysis/external_controls.py
+K2b-top1-soft|P6_wrong_topology,2.7,K2b Top-1 under soft|P6_wrong_topology,K2b,top1,0.5,0.5000,OK,analysis/external_controls.py
+K2b-vsP5-soft|P6_wrong_topology,2.7,K2b soft|P6_wrong_topology minus prior-blind,K2b,top1,-0.042,-0.0417,OK,analysis/external_controls.py
+K2b-vsP5-soft|P6_wrong_topology-cilo,2.7,K2b soft|P6_wrong_topology minus prior-blind-cilo,K2b,top1,-0.139,-0.1389,OK,analysis/external_controls.py
+K2b-vsP5-soft|P6_wrong_topology-cihi,2.7,K2b soft|P6_wrong_topology minus prior-blind-cihi,K2b,top1,0.028,0.0278,OK,analysis/external_controls.py
+K2b-top1-soft|driver_declared,2.7,K2b Top-1 under soft|driver_declared,K2b,top1,0.5,0.5000,OK,analysis/external_controls.py
+K2b-vsP5-soft|driver_declared,2.7,K2b soft|driver_declared minus prior-blind,K2b,top1,-0.042,-0.0417,OK,analysis/external_controls.py
+K2b-vsP5-soft|driver_declared-cilo,2.7,K2b soft|driver_declared minus prior-blind-cilo,K2b,top1,-0.139,-0.1389,OK,analysis/external_controls.py
+K2b-vsP5-soft|driver_declared-cihi,2.7,K2b soft|driver_declared minus prior-blind-cihi,K2b,top1,0.028,0.0278,OK,analysis/external_controls.py
+K2b-top1-hard|P2_semantic,2.7,K2b Top-1 under hard|P2_semantic,K2b,top1,0.5,0.5000,OK,analysis/external_controls.py
+K2b-vsP5-hard|P2_semantic,2.7,K2b hard|P2_semantic minus prior-blind,K2b,top1,-0.042,-0.0417,OK,analysis/external_controls.py
+K2b-vsP5-hard|P2_semantic-cilo,2.7,K2b hard|P2_semantic minus prior-blind-cilo,K2b,top1,-0.139,-0.1389,OK,analysis/external_controls.py
+K2b-vsP5-hard|P2_semantic-cihi,2.7,K2b hard|P2_semantic minus prior-blind-cihi,K2b,top1,0.028,0.0278,OK,analysis/external_controls.py
+K2b-top1-hard|P3_random,2.7,K2b Top-1 under hard|P3_random,K2b,top1,0.528,0.5278,OK,analysis/external_controls.py
+K2b-vsP5-hard|P3_random,2.7,K2b hard|P3_random minus prior-blind,K2b,top1,-0.014,-0.0139,OK,analysis/external_controls.py
+K2b-vsP5-hard|P3_random-cilo,2.7,K2b hard|P3_random minus prior-blind-cilo,K2b,top1,-0.125,-0.1250,OK,analysis/external_controls.py
+K2b-vsP5-hard|P3_random-cihi,2.7,K2b hard|P3_random minus prior-blind-cihi,K2b,top1,0.056,0.0556,OK,analysis/external_controls.py
+K2b-top1-hard|P3b_random_at_P2_density,2.7,K2b Top-1 under hard|P3b_random_at_P2_density,K2b,top1,0.5,0.5000,OK,analysis/external_controls.py
+K2b-vsP5-hard|P3b_random_at_P2_density,2.7,K2b hard|P3b_random_at_P2_density minus prior-blind,K2b,top1,-0.042,-0.0417,OK,analysis/external_controls.py
+K2b-vsP5-hard|P3b_random_at_P2_density-cilo,2.7,K2b hard|P3b_random_at_P2_density minus prior-blind-cilo,K2b,top1,-0.139,-0.1389,OK,analysis/external_controls.py
+K2b-vsP5-hard|P3b_random_at_P2_density-cihi,2.7,K2b hard|P3b_random_at_P2_density minus prior-blind-cihi,K2b,top1,0.028,0.0278,OK,analysis/external_controls.py
+K2b-top1-hard|P4_degree_shuffled,2.7,K2b Top-1 under hard|P4_degree_shuffled,K2b,top1,0.556,0.5556,OK,analysis/external_controls.py
+K2b-vsP5-hard|P4_degree_shuffled,2.7,K2b hard|P4_degree_shuffled minus prior-blind,K2b,top1,0.014,0.0139,OK,analysis/external_controls.py
+K2b-vsP5-hard|P4_degree_shuffled-cilo,2.7,K2b hard|P4_degree_shuffled minus prior-blind-cilo,K2b,top1,0.0,0.0000,OK,analysis/external_controls.py
+K2b-vsP5-hard|P4_degree_shuffled-cihi,2.7,K2b hard|P4_degree_shuffled minus prior-blind-cihi,K2b,top1,0.042,0.0417,OK,analysis/external_controls.py
+K2b-top1-hard|P6_wrong_topology,2.7,K2b Top-1 under hard|P6_wrong_topology,K2b,top1,0.528,0.5278,OK,analysis/external_controls.py
+K2b-vsP5-hard|P6_wrong_topology,2.7,K2b hard|P6_wrong_topology minus prior-blind,K2b,top1,-0.014,-0.0139,OK,analysis/external_controls.py
+K2b-vsP5-hard|P6_wrong_topology-cilo,2.7,K2b hard|P6_wrong_topology minus prior-blind-cilo,K2b,top1,-0.083,-0.0833,OK,analysis/external_controls.py
+K2b-vsP5-hard|P6_wrong_topology-cihi,2.7,K2b hard|P6_wrong_topology minus prior-blind-cihi,K2b,top1,0.042,0.0417,OK,analysis/external_controls.py
+K2b-top1-hard|driver_declared,2.7,K2b Top-1 under hard|driver_declared,K2b,top1,0.542,0.5417,OK,analysis/external_controls.py
+K2b-vsP5-hard|driver_declared,2.7,K2b hard|driver_declared minus prior-blind,K2b,top1,0.0,0.0000,OK,analysis/external_controls.py
+K2b-vsP5-hard|driver_declared-cilo,2.7,K2b hard|driver_declared minus prior-blind-cilo,K2b,top1,-0.111,-0.1111,OK,analysis/external_controls.py
+K2b-vsP5-hard|driver_declared-cihi,2.7,K2b hard|driver_declared minus prior-blind-cihi,K2b,top1,0.097,0.0972,OK,analysis/external_controls.py
+K2b-pair-soft|P1_topology-P6_wrong_topology,2.7,K2b pairwise soft|P1_topology-P6_wrong_topology,K2b,top1,0.028,0.0278,OK,analysis/external_controls.py
+K2b-pair-soft|P2_semantic-P3b_random_at_P2_density,2.7,K2b pairwise soft|P2_semantic-P3b_random_at_P2_density,K2b,top1,0.028,0.0278,OK,analysis/external_controls.py
+HX1-diff,2.7,H-X1 difference of paired contrasts,K1+K2b,top1,0.069,0.0694,OK,analysis/external_hx1.py
+HX1-cilo,2.7,H-X1 interval lower bound,K1+K2b,top1,-0.014,-0.0139,OK,analysis/external_hx1.py
+HX1-cihi,2.7,H-X1 interval upper bound,K1+K2b,top1,0.167,0.1667,OK,analysis/external_hx1.py
+HX1-supported,2.7,H-X1 supported by its registered rule,K1+K2b,top1,0.0,0.0000,OK,analysis/external_hx1.py
+excl-recall-clean,2.2,hard-mask recall with a clean prior,E13,recall,0.814,0.8142,OK,analysis/exclusion_bound.py
+excl-excess-0.1,2.2,recall above the representational reference at c=0.1,E13,recall,0.031,0.0313,OK,analysis/exclusion_bound.py
+excl-excess-0.2,2.2,recall above the representational reference at c=0.2,E13,recall,0.031,0.0311,OK,analysis/exclusion_bound.py
+excl-excess-0.5,2.2,recall above the representational reference at c=0.5,E13,recall,0.055,0.0548,OK,analysis/exclusion_bound.py
+excl-auprc-excess-0.1,2.2,|AUPRC - reference| at c=0.1 is at most 0.024,E13,auprc,1.0,1.0000,OK,analysis/exclusion_bound.py
+excl-auprc-excess-0.2,2.2,|AUPRC - reference| at c=0.2 is at most 0.024,E13,auprc,1.0,1.0000,OK,analysis/exclusion_bound.py
+excl-auprc-excess-0.5,2.2,|AUPRC - reference| at c=0.5 is at most 0.024,E13,auprc,1.0,1.0000,OK,analysis/exclusion_bound.py
+HX6-rho,2.9,pooled Spearman of C against soft - P5,K2b+F1,rho,0.229,0.2286,OK,analysis/external_hx6.py
+HX6-p,2.9,p-value of the pooled Spearman,K2b+F1,p,0.48,0.4748,OK,analysis/external_hx6.py
+HX6-n,2.9,campaign-description pairs in H-X6,K2b+F1,n,12.0,12.0000,OK,analysis/external_hx6.py
+HX6-rho-K2b,SN11,Spearman of C against soft - P5 on K2b,K2b,rho,0.53,0.5296,OK,analysis/external_hx6.py
+HX6-rho-F1,SN11,Spearman of C against soft - P5 on F1,F1,rho,0.577,0.5768,OK,analysis/external_hx6.py
+HX6-C-F1-P2_semantic,SN11,compatibility C of P2_semantic on F1,F1,C,0.485,0.4849,OK,analysis/external_hx6.py
+HX6-C-F1-P6_wrong_topology,SN11,compatibility C of P6_wrong_topology on F1,F1,C,0.0,0.0000,OK,analysis/external_hx6.py
+HX6-C-F1-P1_topology,SN11,compatibility C of P1_topology on F1,F1,C,0.14,0.1396,OK,analysis/external_hx6.py
+HX6-C-K2b-P1_topology,SN11,compatibility C of P1_topology on K2b,K2b,C,0.038,0.0376,OK,analysis/external_hx6.py
+decomp-K1|soft|total,2.10,decomposition K1|soft|total,K1,top1,-0.083,-0.0833,OK,analysis/prior_decomposition.py
+decomp-K1|soft|total-cilo,2.10,decomposition K1|soft|total-cilo,K1,top1,-0.167,-0.1667,OK,analysis/prior_decomposition.py
+decomp-K1|soft|total-cihi,2.10,decomposition K1|soft|total-cihi,K1,top1,-0.014,-0.0139,OK,analysis/prior_decomposition.py
+decomp-K1|soft|identity,2.10,decomposition K1|soft|identity,K1,top1,-0.042,-0.0417,OK,analysis/prior_decomposition.py
+decomp-K1|soft|identity-cilo,2.10,decomposition K1|soft|identity-cilo,K1,top1,-0.125,-0.1250,OK,analysis/prior_decomposition.py
+decomp-K1|soft|identity-cihi,2.10,decomposition K1|soft|identity-cihi,K1,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K1|soft|semantics,2.10,decomposition K1|soft|semantics,K1,top1,-0.042,-0.0417,OK,analysis/prior_decomposition.py
+decomp-K1|soft|semantics-cilo,2.10,decomposition K1|soft|semantics-cilo,K1,top1,-0.194,-0.1944,OK,analysis/prior_decomposition.py
+decomp-K1|soft|semantics-cihi,2.10,decomposition K1|soft|semantics-cihi,K1,top1,0.125,0.1250,OK,analysis/prior_decomposition.py
+decomp-K1|soft|density,2.10,decomposition K1|soft|density,K1,top1,-0.097,-0.0972,OK,analysis/prior_decomposition.py
+decomp-K1|soft|density-cilo,2.10,decomposition K1|soft|density-cilo,K1,top1,-0.181,-0.1806,OK,analysis/prior_decomposition.py
+decomp-K1|soft|density-cihi,2.10,decomposition K1|soft|density-cihi,K1,top1,-0.028,-0.0278,OK,analysis/prior_decomposition.py
+decomp-K1|soft|degree,2.10,decomposition K1|soft|degree,K1,top1,-0.069,-0.0694,OK,analysis/prior_decomposition.py
+decomp-K1|soft|degree-cilo,2.10,decomposition K1|soft|degree-cilo,K1,top1,-0.153,-0.1528,OK,analysis/prior_decomposition.py
+decomp-K1|soft|degree-cihi,2.10,decomposition K1|soft|degree-cihi,K1,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|total,2.10,decomposition K2b|soft|total,K2b,top1,-0.014,-0.0139,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|total-cilo,2.10,decomposition K2b|soft|total-cilo,K2b,top1,-0.069,-0.0694,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|total-cihi,2.10,decomposition K2b|soft|total-cihi,K2b,top1,0.028,0.0278,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|identity,2.10,decomposition K2b|soft|identity,K2b,top1,0.028,0.0278,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|identity-cilo,2.10,decomposition K2b|soft|identity-cilo,K2b,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|identity-cihi,2.10,decomposition K2b|soft|identity-cihi,K2b,top1,0.083,0.0833,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|semantics,2.10,decomposition K2b|soft|semantics,K2b,top1,0.028,0.0278,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|semantics-cilo,2.10,decomposition K2b|soft|semantics-cilo,K2b,top1,-0.069,-0.0694,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|semantics-cihi,2.10,decomposition K2b|soft|semantics-cihi,K2b,top1,0.139,0.1389,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|density,2.10,decomposition K2b|soft|density,K2b,top1,0.028,0.0278,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|density-cilo,2.10,decomposition K2b|soft|density-cilo,K2b,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|density-cihi,2.10,decomposition K2b|soft|density-cihi,K2b,top1,0.083,0.0833,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|degree,2.10,decomposition K2b|soft|degree,K2b,top1,0.014,0.0139,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|degree-cilo,2.10,decomposition K2b|soft|degree-cilo,K2b,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K2b|soft|degree-cihi,2.10,decomposition K2b|soft|degree-cihi,K2b,top1,0.042,0.0417,OK,analysis/prior_decomposition.py
+decomp-F1|soft|total,2.10,decomposition F1|soft|total,F1,top1,0.115,0.1146,OK,analysis/prior_decomposition.py
+decomp-F1|soft|total-cilo,2.10,decomposition F1|soft|total-cilo,F1,top1,-0.021,-0.0208,OK,analysis/prior_decomposition.py
+decomp-F1|soft|total-cihi,2.10,decomposition F1|soft|total-cihi,F1,top1,0.24,0.2396,OK,analysis/prior_decomposition.py
+decomp-F1|soft|identity,2.10,decomposition F1|soft|identity,F1,top1,-0.156,-0.1562,OK,analysis/prior_decomposition.py
+decomp-F1|soft|identity-cilo,2.10,decomposition F1|soft|identity-cilo,F1,top1,-0.271,-0.2708,OK,analysis/prior_decomposition.py
+decomp-F1|soft|identity-cihi,2.10,decomposition F1|soft|identity-cihi,F1,top1,-0.042,-0.0417,OK,analysis/prior_decomposition.py
+decomp-F1|soft|semantics,2.10,decomposition F1|soft|semantics,F1,top1,0.406,0.4062,OK,analysis/prior_decomposition.py
+decomp-F1|soft|semantics-cilo,2.10,decomposition F1|soft|semantics-cilo,F1,top1,0.271,0.2708,OK,analysis/prior_decomposition.py
+decomp-F1|soft|semantics-cihi,2.10,decomposition F1|soft|semantics-cihi,F1,top1,0.542,0.5417,OK,analysis/prior_decomposition.py
+decomp-F1|soft|density,2.10,decomposition F1|soft|density,F1,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-F1|soft|density-cilo,2.10,decomposition F1|soft|density-cilo,F1,top1,-0.094,-0.0938,OK,analysis/prior_decomposition.py
+decomp-F1|soft|density-cihi,2.10,decomposition F1|soft|density-cihi,F1,top1,0.083,0.0833,OK,analysis/prior_decomposition.py
+decomp-F1|soft|degree,2.10,decomposition F1|soft|degree,F1,top1,-0.01,-0.0104,OK,analysis/prior_decomposition.py
+decomp-F1|soft|degree-cilo,2.10,decomposition F1|soft|degree-cilo,F1,top1,-0.167,-0.1667,OK,analysis/prior_decomposition.py
+decomp-F1|soft|degree-cihi,2.10,decomposition F1|soft|degree-cihi,F1,top1,0.146,0.1458,OK,analysis/prior_decomposition.py
+decomp-K1|hard|total,2.10,decomposition K1|hard|total,K1,top1,-0.056,-0.0556,OK,analysis/prior_decomposition.py
+decomp-K1|hard|total-cilo,2.10,decomposition K1|hard|total-cilo,K1,top1,-0.153,-0.1528,OK,analysis/prior_decomposition.py
+decomp-K1|hard|total-cihi,2.10,decomposition K1|hard|total-cihi,K1,top1,0.042,0.0417,OK,analysis/prior_decomposition.py
+decomp-K1|hard|identity,2.10,decomposition K1|hard|identity,K1,top1,-0.028,-0.0278,OK,analysis/prior_decomposition.py
+decomp-K1|hard|identity-cilo,2.10,decomposition K1|hard|identity-cilo,K1,top1,-0.083,-0.0833,OK,analysis/prior_decomposition.py
+decomp-K1|hard|identity-cihi,2.10,decomposition K1|hard|identity-cihi,K1,top1,0.028,0.0278,OK,analysis/prior_decomposition.py
+decomp-K1|hard|semantics,2.10,decomposition K1|hard|semantics,K1,top1,0.097,0.0972,OK,analysis/prior_decomposition.py
+decomp-K1|hard|semantics-cilo,2.10,decomposition K1|hard|semantics-cilo,K1,top1,-0.028,-0.0278,OK,analysis/prior_decomposition.py
+decomp-K1|hard|semantics-cihi,2.10,decomposition K1|hard|semantics-cihi,K1,top1,0.236,0.2361,OK,analysis/prior_decomposition.py
+decomp-K1|hard|density,2.10,decomposition K1|hard|density,K1,top1,-0.042,-0.0417,OK,analysis/prior_decomposition.py
+decomp-K1|hard|density-cilo,2.10,decomposition K1|hard|density-cilo,K1,top1,-0.181,-0.1806,OK,analysis/prior_decomposition.py
+decomp-K1|hard|density-cihi,2.10,decomposition K1|hard|density-cihi,K1,top1,0.083,0.0833,OK,analysis/prior_decomposition.py
+decomp-K1|hard|degree,2.10,decomposition K1|hard|degree,K1,top1,-0.028,-0.0278,OK,analysis/prior_decomposition.py
+decomp-K1|hard|degree-cilo,2.10,decomposition K1|hard|degree-cilo,K1,top1,-0.083,-0.0833,OK,analysis/prior_decomposition.py
+decomp-K1|hard|degree-cihi,2.10,decomposition K1|hard|degree-cihi,K1,top1,0.028,0.0278,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|total,2.10,decomposition K2b|hard|total,K2b,top1,0.014,0.0139,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|total-cilo,2.10,decomposition K2b|hard|total-cilo,K2b,top1,-0.069,-0.0694,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|total-cihi,2.10,decomposition K2b|hard|total-cihi,K2b,top1,0.097,0.0972,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|identity,2.10,decomposition K2b|hard|identity,K2b,top1,0.028,0.0278,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|identity-cilo,2.10,decomposition K2b|hard|identity-cilo,K2b,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|identity-cihi,2.10,decomposition K2b|hard|identity-cihi,K2b,top1,0.083,0.0833,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|semantics,2.10,decomposition K2b|hard|semantics,K2b,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|semantics-cilo,2.10,decomposition K2b|hard|semantics-cilo,K2b,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|semantics-cihi,2.10,decomposition K2b|hard|semantics-cihi,K2b,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|density,2.10,decomposition K2b|hard|density,K2b,top1,0.028,0.0278,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|density-cilo,2.10,decomposition K2b|hard|density-cilo,K2b,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|density-cihi,2.10,decomposition K2b|hard|density-cihi,K2b,top1,0.069,0.0694,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|degree,2.10,decomposition K2b|hard|degree,K2b,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|degree-cilo,2.10,decomposition K2b|hard|degree-cilo,K2b,top1,-0.083,-0.0833,OK,analysis/prior_decomposition.py
+decomp-K2b|hard|degree-cihi,2.10,decomposition K2b|hard|degree-cihi,K2b,top1,0.083,0.0833,OK,analysis/prior_decomposition.py
+decomp-F1|hard|total,2.10,decomposition F1|hard|total,F1,top1,0.281,0.2812,OK,analysis/prior_decomposition.py
+decomp-F1|hard|total-cilo,2.10,decomposition F1|hard|total-cilo,F1,top1,0.125,0.1250,OK,analysis/prior_decomposition.py
+decomp-F1|hard|total-cihi,2.10,decomposition F1|hard|total-cihi,F1,top1,0.438,0.4375,OK,analysis/prior_decomposition.py
+decomp-F1|hard|identity,2.10,decomposition F1|hard|identity,F1,top1,-0.062,-0.0625,OK,analysis/prior_decomposition.py
+decomp-F1|hard|identity-cilo,2.10,decomposition F1|hard|identity-cilo,F1,top1,-0.125,-0.1250,OK,analysis/prior_decomposition.py
+decomp-F1|hard|identity-cihi,2.10,decomposition F1|hard|identity-cihi,F1,top1,0.0,0.0000,OK,analysis/prior_decomposition.py
+decomp-F1|hard|semantics,2.10,decomposition F1|hard|semantics,F1,top1,0.146,0.1458,OK,analysis/prior_decomposition.py
+decomp-F1|hard|semantics-cilo,2.10,decomposition F1|hard|semantics-cilo,F1,top1,0.031,0.0312,OK,analysis/prior_decomposition.py
+decomp-F1|hard|semantics-cihi,2.10,decomposition F1|hard|semantics-cihi,F1,top1,0.271,0.2708,OK,analysis/prior_decomposition.py
+decomp-F1|hard|density,2.10,decomposition F1|hard|density,F1,top1,0.25,0.2500,OK,analysis/prior_decomposition.py
+decomp-F1|hard|density-cilo,2.10,decomposition F1|hard|density-cilo,F1,top1,0.073,0.0729,OK,analysis/prior_decomposition.py
+decomp-F1|hard|density-cihi,2.10,decomposition F1|hard|density-cihi,F1,top1,0.417,0.4167,OK,analysis/prior_decomposition.py
+decomp-F1|hard|degree,2.10,decomposition F1|hard|degree,F1,top1,0.135,0.1354,OK,analysis/prior_decomposition.py
+decomp-F1|hard|degree-cilo,2.10,decomposition F1|hard|degree-cilo,F1,top1,-0.062,-0.0625,OK,analysis/prior_decomposition.py
+decomp-F1|hard|degree-cihi,2.10,decomposition F1|hard|degree-cihi,F1,top1,0.333,0.3333,OK,analysis/prior_decomposition.py
+seedrob-F1|soft|P2 - P3b,SN12,two-way bootstrap F1|soft|P2 - P3b,F1,top1,0.406,0.4062,OK,analysis/external_seed_robustness.py
+seedrob-F1|soft|P2 - P3b-cilo,SN12,two-way bootstrap F1|soft|P2 - P3b-cilo,F1,top1,0.25,0.2500,OK,analysis/external_seed_robustness.py
+seedrob-F1|soft|P2 - P3b-cihi,SN12,two-way bootstrap F1|soft|P2 - P3b-cihi,F1,top1,0.562,0.5625,OK,analysis/external_seed_robustness.py
+seedrob-F1|soft|P1 - P6,SN12,two-way bootstrap F1|soft|P1 - P6,F1,top1,-0.156,-0.1562,OK,analysis/external_seed_robustness.py
+seedrob-F1|soft|P1 - P6-cilo,SN12,two-way bootstrap F1|soft|P1 - P6-cilo,F1,top1,-0.302,-0.3021,OK,analysis/external_seed_robustness.py
+seedrob-F1|soft|P1 - P6-cihi,SN12,two-way bootstrap F1|soft|P1 - P6-cihi,F1,top1,-0.01,-0.0104,OK,analysis/external_seed_robustness.py
+seedrob-F1|soft|P1 - P5,SN12,two-way bootstrap F1|soft|P1 - P5,F1,top1,0.115,0.1146,OK,analysis/external_seed_robustness.py
+seedrob-F1|soft|P1 - P5-cilo,SN12,two-way bootstrap F1|soft|P1 - P5-cilo,F1,top1,-0.042,-0.0417,OK,analysis/external_seed_robustness.py
+seedrob-F1|soft|P1 - P5-cihi,SN12,two-way bootstrap F1|soft|P1 - P5-cihi,F1,top1,0.281,0.2812,OK,analysis/external_seed_robustness.py
+seedrob-F1|P5 - anomaly,SN12,two-way bootstrap F1|P5 - anomaly,F1,top1,0.094,0.0938,OK,analysis/external_seed_robustness.py
+seedrob-F1|P5 - anomaly-cilo,SN12,two-way bootstrap F1|P5 - anomaly-cilo,F1,top1,-0.062,-0.0625,OK,analysis/external_seed_robustness.py
+seedrob-F1|P5 - anomaly-cihi,SN12,two-way bootstrap F1|P5 - anomaly-cihi,F1,top1,0.26,0.2604,OK,analysis/external_seed_robustness.py
+F1-passed,2.9,F1 passes the gates that apply to it,F1,gate,1.0,1.0000,OK,analysis/external_gates.py
+F1-n-nominal,2.9,nominal samples in F1,F1,gate,3606.0,3606.0000,OK,analysis/external_gates.py
+F1-n-faults,2.9,faults in the F1 campaign,F1,n,32.0,32.0000,OK,analysis/external_controls.py
+F1-blind-anomaly,2.9,F1 prior-blind minus anomaly,F1,top1,0.094,0.0937,OK,analysis/external_controls.py
+F1-blind-anomaly-cilo,2.9,F1 prior-blind minus anomaly-cilo,F1,top1,-0.042,-0.0417,OK,analysis/external_controls.py
+F1-blind-anomaly-cihi,2.9,F1 prior-blind minus anomaly-cihi,F1,top1,0.219,0.2188,OK,analysis/external_controls.py
+F1-top1-soft|P1_topology,2.9,F1 Top-1 under soft|P1_topology,F1,top1,0.271,0.2708,OK,analysis/external_controls.py
+F1-vsP5-soft|P1_topology,2.9,F1 soft|P1_topology minus prior-blind,F1,top1,0.115,0.1146,OK,analysis/external_controls.py
+F1-vsP5-soft|P1_topology-cilo,2.9,F1 soft|P1_topology minus prior-blind-cilo,F1,top1,-0.021,-0.0208,OK,analysis/external_controls.py
+F1-vsP5-soft|P1_topology-cihi,2.9,F1 soft|P1_topology minus prior-blind-cihi,F1,top1,0.24,0.2396,OK,analysis/external_controls.py
+F1-top1-hard|P1_topology,2.9,F1 Top-1 under hard|P1_topology,F1,top1,0.438,0.4375,OK,analysis/external_controls.py
+F1-vsP5-hard|P1_topology,2.9,F1 hard|P1_topology minus prior-blind,F1,top1,0.281,0.2812,OK,analysis/external_controls.py
+F1-vsP5-hard|P1_topology-cilo,2.9,F1 hard|P1_topology minus prior-blind-cilo,F1,top1,0.125,0.1250,OK,analysis/external_controls.py
+F1-vsP5-hard|P1_topology-cihi,2.9,F1 hard|P1_topology minus prior-blind-cihi,F1,top1,0.438,0.4375,OK,analysis/external_controls.py
+F1-top1-soft|P2_semantic,2.9,F1 Top-1 under soft|P2_semantic,F1,top1,0.5,0.5000,OK,analysis/external_controls.py
+F1-vsP5-soft|P2_semantic,2.9,F1 soft|P2_semantic minus prior-blind,F1,top1,0.344,0.3438,OK,analysis/external_controls.py
+F1-vsP5-soft|P2_semantic-cilo,2.9,F1 soft|P2_semantic minus prior-blind-cilo,F1,top1,0.229,0.2292,OK,analysis/external_controls.py
+F1-vsP5-soft|P2_semantic-cihi,2.9,F1 soft|P2_semantic minus prior-blind-cihi,F1,top1,0.458,0.4583,OK,analysis/external_controls.py
+F1-top1-soft|P6_wrong_topology,2.9,F1 Top-1 under soft|P6_wrong_topology,F1,top1,0.427,0.4271,OK,analysis/external_controls.py
+F1-vsP5-soft|P6_wrong_topology,2.9,F1 soft|P6_wrong_topology minus prior-blind,F1,top1,0.271,0.2708,OK,analysis/external_controls.py
+F1-vsP5-soft|P6_wrong_topology-cilo,2.9,F1 soft|P6_wrong_topology minus prior-blind-cilo,F1,top1,0.135,0.1354,OK,analysis/external_controls.py
+F1-vsP5-soft|P6_wrong_topology-cihi,2.9,F1 soft|P6_wrong_topology minus prior-blind-cihi,F1,top1,0.417,0.4167,OK,analysis/external_controls.py
+F1-top1-hard|P6_wrong_topology,2.9,F1 Top-1 under hard|P6_wrong_topology,F1,top1,0.5,0.5000,OK,analysis/external_controls.py
+F1-vsP5-hard|P6_wrong_topology,2.9,F1 hard|P6_wrong_topology minus prior-blind,F1,top1,0.344,0.3438,OK,analysis/external_controls.py
+F1-vsP5-hard|P6_wrong_topology-cilo,2.9,F1 hard|P6_wrong_topology minus prior-blind-cilo,F1,top1,0.198,0.1979,OK,analysis/external_controls.py
+F1-vsP5-hard|P6_wrong_topology-cihi,2.9,F1 hard|P6_wrong_topology minus prior-blind-cihi,F1,top1,0.49,0.4896,OK,analysis/external_controls.py
+F1-blind-top1,2.9,F1 prior-blind Top-1,F1,top1,0.156,0.1562,OK,analysis/external_controls.py
+pooled-H-X2|soft,2.9,pooled H-X2|soft mean,K2b+F1,top1,-0.077,-0.0774,OK,analysis/external_pooled.py
+pooled-H-X2|soft-cilo,2.9,pooled H-X2|soft-cilo,K2b+F1,top1,-0.149,-0.1488,OK,analysis/external_pooled.py
+pooled-H-X2|soft-cihi,2.9,pooled H-X2|soft-cihi,K2b+F1,top1,-0.006,-0.0060,OK,analysis/external_pooled.py
+pooled-H-X2|soft-supported,2.9,pooled H-X2|soft-supported,K2b+F1,top1,0.0,0.0000,OK,analysis/external_pooled.py
+pooled-H-X2|hard,2.9,pooled H-X2|hard mean,K2b+F1,top1,-0.024,-0.0238,OK,analysis/external_pooled.py
+pooled-H-X2|hard-cilo,2.9,pooled H-X2|hard-cilo,K2b+F1,top1,-0.065,-0.0655,OK,analysis/external_pooled.py
+pooled-H-X2|hard-cihi,2.9,pooled H-X2|hard-cihi,K2b+F1,top1,0.018,0.0179,OK,analysis/external_pooled.py
+pooled-H-X2|hard-supported,2.9,pooled H-X2|hard-supported,K2b+F1,top1,0.0,0.0000,OK,analysis/external_pooled.py
+pooled-H-X3|soft,2.9,pooled H-X3|soft mean,K2b+F1,top1,0.244,0.2440,OK,analysis/external_pooled.py
+pooled-H-X3|soft-cilo,2.9,pooled H-X3|soft-cilo,K2b+F1,top1,0.155,0.1548,OK,analysis/external_pooled.py
+pooled-H-X3|soft-cihi,2.9,pooled H-X3|soft-cihi,K2b+F1,top1,0.333,0.3333,OK,analysis/external_pooled.py
+pooled-H-X3|soft-supported,2.9,pooled H-X3|soft-supported,K2b+F1,top1,1.0,1.0000,OK,analysis/external_pooled.py
+pooled-H-X3|hard,2.9,pooled H-X3|hard mean,K2b+F1,top1,0.083,0.0833,OK,analysis/external_pooled.py
+pooled-H-X3|hard-cilo,2.9,pooled H-X3|hard-cilo,K2b+F1,top1,0.018,0.0179,OK,analysis/external_pooled.py
+pooled-H-X3|hard-cihi,2.9,pooled H-X3|hard-cihi,K2b+F1,top1,0.155,0.1548,OK,analysis/external_pooled.py
+pooled-H-X3|hard-supported,2.9,pooled H-X3|hard-supported,K2b+F1,top1,1.0,1.0000,OK,analysis/external_pooled.py
+pooled-HX2-soft-K2b,2.9,H-X2 soft contrast on K2b,K2b+F1,top1,0.028,0.0278,OK,analysis/external_pooled.py
+pooled-HX2-soft-F1,2.9,H-X2 soft contrast on F1,K2b+F1,top1,-0.156,-0.1562,OK,analysis/external_pooled.py
+K2-G4-rho,SN9,unconnected throughput |rho| in K2,K2,gate,0.756,0.7557,OK,analysis/external_gates.py
+K2-connected-rho,SN9,connected throughput |rho| in K2,K2,gate,0.91,0.9097,OK,analysis/external_gates.py
+K2-G3-r2,SN9,median cross-variable R2 excl. throughput in K2,K2,gate,0.81,0.8124,OK,analysis/external_gates.py
+K2-n-nominal,SN9,nominal samples in K2,K2,gate,3606.0,3606.0000,OK,analysis/external_gates.py
+K2-G4-failed,SN9,K2 fails gate G4,K2,gate,0.0,0.0000,OK,analysis/external_gates.py
+K2-passed,SN9,K2 passes all gates,K2,gate,0.0,0.0000,OK,analysis/external_gates.py
+K1ctl-p5-identical,SN8,prior-blind model identical across prior-variant runs,K1ctl,flag,1.0,1.0000,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P1_topology-mean,SN8,K1 prior control soft|P1_topology (vs_blind) mean,K1ctl,top1,-0.083,-0.0833,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P1_topology-lo,SN8,K1 prior control soft|P1_topology (vs_blind) lo,K1ctl,top1,-0.167,-0.1667,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P1_topology-hi,SN8,K1 prior control soft|P1_topology (vs_blind) hi,K1ctl,top1,-0.014,-0.0139,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P2_semantic-mean,SN8,K1 prior control soft|P2_semantic (vs_blind) mean,K1ctl,top1,-0.042,-0.0417,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P2_semantic-lo,SN8,K1 prior control soft|P2_semantic (vs_blind) lo,K1ctl,top1,-0.194,-0.1944,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P2_semantic-hi,SN8,K1 prior control soft|P2_semantic (vs_blind) hi,K1ctl,top1,0.111,0.1111,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P3_random-mean,SN8,K1 prior control soft|P3_random (vs_blind) mean,K1ctl,top1,0.014,0.0139,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P3_random-lo,SN8,K1 prior control soft|P3_random (vs_blind) lo,K1ctl,top1,-0.056,-0.0556,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P3_random-hi,SN8,K1 prior control soft|P3_random (vs_blind) hi,K1ctl,top1,0.097,0.0972,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P3b_random_at_P2_density-mean,SN8,K1 prior control soft|P3b_random_at_P2_density (vs_blind) mean,K1ctl,top1,0.0,-0.0000,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P3b_random_at_P2_density-lo,SN8,K1 prior control soft|P3b_random_at_P2_density (vs_blind) lo,K1ctl,top1,-0.069,-0.0694,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P3b_random_at_P2_density-hi,SN8,K1 prior control soft|P3b_random_at_P2_density (vs_blind) hi,K1ctl,top1,0.083,0.0833,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P4_degree_shuffled-mean,SN8,K1 prior control soft|P4_degree_shuffled (vs_blind) mean,K1ctl,top1,-0.014,-0.0139,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P4_degree_shuffled-lo,SN8,K1 prior control soft|P4_degree_shuffled (vs_blind) lo,K1ctl,top1,-0.056,-0.0556,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P4_degree_shuffled-hi,SN8,K1 prior control soft|P4_degree_shuffled (vs_blind) hi,K1ctl,top1,0.028,0.0278,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P6_wrong_topology-mean,SN8,K1 prior control soft|P6_wrong_topology (vs_blind) mean,K1ctl,top1,-0.042,-0.0417,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P6_wrong_topology-lo,SN8,K1 prior control soft|P6_wrong_topology (vs_blind) lo,K1ctl,top1,-0.153,-0.1528,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|P6_wrong_topology-hi,SN8,K1 prior control soft|P6_wrong_topology (vs_blind) hi,K1ctl,top1,0.083,0.0833,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|driver_declared-mean,SN8,K1 prior control soft|driver_declared (vs_blind) mean,K1ctl,top1,-0.042,-0.0417,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|driver_declared-lo,SN8,K1 prior control soft|driver_declared (vs_blind) lo,K1ctl,top1,-0.125,-0.1250,OK,analysis/external_controls.py
+K1ctl-vs_blind-soft|driver_declared-hi,SN8,K1 prior control soft|driver_declared (vs_blind) hi,K1ctl,top1,0.028,0.0278,OK,analysis/external_controls.py
+K1ctl-vs_blind-hard|P3b_random_at_P2_density-mean,SN8,K1 prior control hard|P3b_random_at_P2_density (vs_blind) mean,K1ctl,top1,-0.083,-0.0833,OK,analysis/external_controls.py
+K1ctl-vs_blind-hard|P3b_random_at_P2_density-lo,SN8,K1 prior control hard|P3b_random_at_P2_density (vs_blind) lo,K1ctl,top1,-0.167,-0.1667,OK,analysis/external_controls.py
+K1ctl-vs_blind-hard|P3b_random_at_P2_density-hi,SN8,K1 prior control hard|P3b_random_at_P2_density (vs_blind) hi,K1ctl,top1,-0.014,-0.0139,OK,analysis/external_controls.py
+K1ctl-pairwise-soft|P1_topology-P3_random-mean,SN8,K1 prior control soft|P1_topology-P3_random (pairwise) mean,K1ctl,top1,-0.097,-0.0972,OK,analysis/external_controls.py
+K1ctl-pairwise-soft|P1_topology-P3_random-lo,SN8,K1 prior control soft|P1_topology-P3_random (pairwise) lo,K1ctl,top1,-0.181,-0.1806,OK,analysis/external_controls.py
+K1ctl-pairwise-soft|P1_topology-P3_random-hi,SN8,K1 prior control soft|P1_topology-P3_random (pairwise) hi,K1ctl,top1,-0.028,-0.0278,OK,analysis/external_controls.py
+K1ctl-pairwise-soft|P1_topology-P4_degree_shuffled-mean,SN8,K1 prior control soft|P1_topology-P4_degree_shuffled (pairwise) mean,K1ctl,top1,-0.069,-0.0694,OK,analysis/external_controls.py
+K1ctl-pairwise-soft|P1_topology-P4_degree_shuffled-lo,SN8,K1 prior control soft|P1_topology-P4_degree_shuffled (pairwise) lo,K1ctl,top1,-0.153,-0.1528,OK,analysis/external_controls.py
+K1ctl-pairwise-soft|P1_topology-P4_degree_shuffled-hi,SN8,K1 prior control soft|P1_topology-P4_degree_shuffled (pairwise) hi,K1ctl,top1,0.0,0.0000,OK,analysis/external_controls.py
+K1ctl-pairwise-soft|P1_topology-P6_wrong_topology-mean,SN8,K1 prior control soft|P1_topology-P6_wrong_topology (pairwise) mean,K1ctl,top1,-0.042,-0.0417,OK,analysis/external_controls.py
+K1ctl-pairwise-soft|P1_topology-P6_wrong_topology-lo,SN8,K1 prior control soft|P1_topology-P6_wrong_topology (pairwise) lo,K1ctl,top1,-0.125,-0.1250,OK,analysis/external_controls.py
+K1ctl-pairwise-soft|P1_topology-P6_wrong_topology-hi,SN8,K1 prior control soft|P1_topology-P6_wrong_topology (pairwise) hi,K1ctl,top1,0.0,0.0000,OK,analysis/external_controls.py
+K1ctl-pairwise-hard|P2_semantic-P3b_random_at_P2_density-mean,SN8,K1 prior control hard|P2_semantic-P3b_random_at_P2_density (pairwise) mean,K1ctl,top1,0.097,0.0972,OK,analysis/external_controls.py
+K1ctl-pairwise-hard|P2_semantic-P3b_random_at_P2_density-lo,SN8,K1 prior control hard|P2_semantic-P3b_random_at_P2_density (pairwise) lo,K1ctl,top1,-0.028,-0.0278,OK,analysis/external_controls.py
+K1ctl-pairwise-hard|P2_semantic-P3b_random_at_P2_density-hi,SN8,K1 prior control hard|P2_semantic-P3b_random_at_P2_density (pairwise) hi,K1ctl,top1,0.236,0.2361,OK,analysis/external_controls.py
+E10-nvars,2.10,channels instrumented,E10,n_variables,40.0,40.0000,OK,analysis/campaign_diagnostics.py
+E10-nominal,2.10,nominal samples,E10,n_nominal_samples,3606.0,3606.0000,OK,analysis/campaign_diagnostics.py
+E10-window,2.10,samples per window,E10,samples_per_window,601.0,601.0000,OK,analysis/campaign_diagnostics.py
+E10-faults,2.10,fault windows,E10,n_fault_windows,24.0,24.0000,OK,analysis/campaign_diagnostics.py
+E10-prior-edges,2.10,admissible channel pairs,E10,prior_edges,335.0,335.0000,OK,analysis/campaign_diagnostics.py
+E10-prior-density,2.10,prior density,E10,prior_density,0.209,0.2094,OK,analysis/campaign_diagnostics.py
+E10-cv,2.10,per-service throughput CV,E10,throughput_cv_median,0.36,0.3631,OK,analysis/campaign_diagnostics.py
+E10-degenerate,2.10,channels with zero nominal variance,E10,n_degenerate,16.0,16.0000,OK,analysis/campaign_diagnostics.py
+E10-live,2.10,channels with nominal variation,E10,n_live,24.0,24.0000,OK,analysis/campaign_diagnostics.py
+E10-coverage-strong,2.10,admissible fraction among live pairs with |rho|>=0.3,E10,coverage,0.324,0.3235,OK,analysis/campaign_diagnostics.py
+E10-coverage-base,2.10,admissible fraction over all live pairs,E10,coverage,0.315,0.3152,OK,analysis/campaign_diagnostics.py
+E10-strong-pairs,2.10,live pairs with |rho|>=0.3,E10,n_pairs,34.0,34.0000,OK,analysis/campaign_diagnostics.py

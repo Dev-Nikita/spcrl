@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "SP-CRL: structural priors for causal learning under distribution shift"
+message: "If you use this software or its data, please cite it."
+type: software
+authors:
+  - family-names: Tarasov
+    given-names: Nikita
+    affiliation: "Lviv Polytechnic National University"
+    email: dev.nikita@outlook.com
+  - family-names: Zinko
+    given-names: Roman
+    affiliation: "Lviv Polytechnic National University"
+    email: roman.v.zinko@lpnu.ua
+license: MIT
+repository-code: "https://github.com/Dev-Nikita/spcrl"
+abstract: >-
+  Code, pre-registrations, external campaign telemetry and result records for a
+  study of how a learner should use a fallible structural description of the
+  system it is modelling, with pre-registered campaigns on a Kubernetes
+  deployment and a free5GC 5G control plane.
+keywords:
+  - causal discovery
+  - structural priors
+  - distribution shift
+  - root-cause analysis
+  - pre-registration

@@ -1,0 +1,36 @@
+# Cloud-native 5G core (free5GC) plus the application services running on top.
+# `depends_on` follows the SBI / user-plane reference points, so the structural
+# prior is again read off the deployment description, not off the data.
+services:
+  - {name: ue-sim,  role: load,     base_latency_ms: 0,  depends_on: [amf]}
+  - {name: amf,     role: cp,       base_latency_ms: 6,  depends_on: [ausf, smf, nrf]}
+  - {name: ausf,    role: cp,       base_latency_ms: 5,  depends_on: [udm, nrf]}
+  - {name: udm,     role: cp,       base_latency_ms: 7,  depends_on: [udr, nrf]}
+  - {name: udr,     role: db,       base_latency_ms: 9,  depends_on: [mongodb]}
+  - {name: smf,     role: cp,       base_latency_ms: 8,  depends_on: [upf, pcf, nrf]}
+  - {name: pcf,     role: cp,       base_latency_ms: 5,  depends_on: [nrf]}
+  - {name: nrf,     role: registry, base_latency_ms: 3,  depends_on: [mongodb]}
+  - {name: upf,     role: up,       base_latency_ms: 2,  depends_on: [edge-gateway]}
+  - {name: mongodb, role: db,       base_latency_ms: 4,  depends_on: []}
+  - {name: edge-gateway, role: app, base_latency_ms: 4,  depends_on: [app-order]}
+  - {name: app-order,    role: app, base_latency_ms: 8,  depends_on: [broker, cache, appdb]}
+  - {name: broker,  role: sink,     base_latency_ms: 3,  depends_on: []}
+  - {name: cache,   role: sink,     base_latency_ms: 1,  depends_on: []}
+  - {name: appdb,   role: sink,     base_latency_ms: 10, depends_on: []}
+node_types:
+  ue-sim: source
+  amf: middle
+  ausf: middle
+  udm: middle
+  udr: middle
+  smf: middle
+  pcf: middle
+  nrf: middle
+  upf: middle
+  edge-gateway: middle
+  app-order: middle
+  mongodb: sink
+  broker: sink
+  cache: sink
+  appdb: sink
+kpi: edge-gateway_latency_p95

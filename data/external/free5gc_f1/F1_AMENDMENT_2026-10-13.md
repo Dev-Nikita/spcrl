@@ -1,0 +1,5 @@
+# F1 pre-data stabilization amendment — 2026-10-13
+
+Engineering validation before any valid F1 campaign revealed a reproducible UERANSIM v3.3.0 nr-gnb segmentation fault under high-frequency UE attach/release churn (exit 139, OOMKilled=false). The scientific F1 design is unchanged: the same free5GC core, 40 provisioned subscribers, UE population K=2..20 following the same bounded random walk, registration and PDU-session attempts, eight monitored network functions, CPU-saturation and SBI-latency faults, 32 fault windows, six nominal windows, scrape interval, topology, priors, and analysis.
+
+Access-side stabilization changes only the workload implementation. Two independent UERANSIM gNB processes are used, splitting each sampled aggregate UE population between them. To avoid repeatedly triggering the UERANSIM implementation defect, each sampled population is held for 300 s followed by a 30 s transition/cool-down before the next random-walk step. All campaigns collected before this amendment are engineering diagnostics, are marked aborted, and are excluded from F1 analysis.

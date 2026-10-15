@@ -1,0 +1,43 @@
+# Overlay for free5gc-compose used by the F1 campaign.
+#   docker compose -f docker-compose.yaml -f <path>/docker-compose.spcrl.yaml up -d
+#
+# Adds what the pre-registered campaign needs and nothing else:
+#   * NET_ADMIN on the eight network functions, so tc netem can inject SBI delay
+#   * cAdvisor, the only per-function telemetry available (free5GC exports none)
+#   * Prometheus scraping cAdvisor every second, as in the Kubernetes campaigns
+#
+# Service names below must match the ones in your free5gc-compose file; if a
+# `docker compose config` complains about an unknown service, rename it here.
+services:
+  free5gc-amf:  {cap_add: [NET_ADMIN]}
+  free5gc-ausf: {cap_add: [NET_ADMIN]}
+  free5gc-udm:  {cap_add: [NET_ADMIN]}
+  free5gc-udr:  {cap_add: [NET_ADMIN]}
+  free5gc-nssf: {cap_add: [NET_ADMIN]}
+  free5gc-pcf:  {cap_add: [NET_ADMIN]}
+  free5gc-smf:  {cap_add: [NET_ADMIN]}
+  free5gc-nrf:  {cap_add: [NET_ADMIN]}
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.49.1
+    container_name: cadvisor
+    privileged: true
+    command: ["--docker_only=true", "--housekeeping_interval=1s",
+              "--store_container_labels=false"]
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    ports: ["8088:8080"]
+
+  prometheus:
+    image: prom/prometheus:v2.53.0
+    container_name: spcrl-prometheus
+    command: ["--config.file=/etc/prometheus/prometheus.yml",
+              "--storage.tsdb.retention.time=7d"]
+    volumes:
+      - ./prometheus-f1.yml:/etc/prometheus/prometheus.yml:ro
+    ports: ["9090:9090"]
+    depends_on: [cadvisor]

@@ -1,0 +1,17 @@
+# Declarative topology.  This file is the single source of truth for both the
+# deployment and the *structural prior*: benchmarks/microservices/scripts/
+# collect.py turns `depends_on` into the admissible interaction graph, so the
+# prior is derived from the deployment description and never from labels.
+services:
+  - {name: gateway,  role: gateway,  base_latency_ms: 4,  depends_on: [auth, order]}
+  - {name: auth,     role: auth,     base_latency_ms: 6,  depends_on: [authdb]}
+  - {name: order,    role: order,    base_latency_ms: 8,  depends_on: [payment, cache, broker]}
+  - {name: payment,  role: payment,  base_latency_ms: 12, depends_on: [orderdb]}
+  - {name: cache,    role: cache,    base_latency_ms: 1,  depends_on: []}
+  - {name: broker,   role: broker,   base_latency_ms: 3,  depends_on: []}
+  - {name: authdb,   role: db,       base_latency_ms: 9,  depends_on: []}
+  - {name: orderdb,  role: db,       base_latency_ms: 11, depends_on: []}
+node_types: {gateway: source, auth: middle, order: middle, payment: middle,
+             cache: sink, broker: sink, authdb: sink, orderdb: sink}
+entrypoint: gateway
+kpi: gateway::latency_p95

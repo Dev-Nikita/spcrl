@@ -1,0 +1,36 @@
+# F1: free5GC control plane. Fixed with docs/PREREGISTRATION_EXTERNAL.md,
+# before any F1 data existed.
+#
+# `depends_on` lists the network functions whose services each function
+# CONSUMES during UE registration and PDU-session establishment in the 5G
+# service-based architecture [3GPP TS 23.501]: the AMF authenticates the UE
+# through the AUSF, which obtains authentication data from the UDM, which reads
+# subscription data from the UDR; the AMF also retrieves subscription and
+# context data from the UDM, slice selection from the NSSF, access and mobility
+# policy from the PCF, and forwards session management to the SMF, which itself
+# consults the UDM and the PCF; the PCF reads policy data from the UDR; every
+# function discovers its peers through the NRF; the UDR and the NRF persist to
+# the database. This is the description a practitioner would write from the
+# architecture, not from the telemetry.
+#
+# `container` is the Docker container name. It is the one field that depends on
+# the local compose file: check it with `docker ps --format '{{.Names}}'` in the
+# smoke test and edit it here if your names differ. Editing container names is
+# not an amendment; editing depends_on is.
+services:
+  - {name: amf,  container: amf,  depends_on: [ausf, udm, nssf, pcf, smf, nrf]}
+  - {name: ausf, container: ausf, depends_on: [udm, nrf]}
+  - {name: udm,  container: udm,  depends_on: [udr, nrf]}
+  - {name: smf,  container: smf,  depends_on: [udm, pcf, nrf]}
+  - {name: pcf,  container: pcf,  depends_on: [udr, nrf]}
+  - {name: nssf, container: nssf, depends_on: [nrf]}
+  - {name: udr,  container: udr,  depends_on: [db]}
+  - {name: nrf,  container: nrf,  depends_on: [db]}
+  - {name: db,   container: mongodb, depends_on: []}
+node_types: {amf: source, ausf: middle, udm: middle, smf: middle, pcf: middle,
+             nssf: middle, udr: middle, nrf: middle, db: sink}
+entrypoint: amf
+# faults are injected into the eight network functions, not into the database
+fault_targets: [amf, ausf, udm, smf, pcf, nssf, udr, nrf]
+signals: [cpu, memory, net_rx, net_tx]
+semantics: nf
