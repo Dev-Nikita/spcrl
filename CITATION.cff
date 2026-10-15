@@ -12,6 +12,9 @@ authors:
     affiliation: "Lviv Polytechnic National University"
     email: roman.v.zinko@lpnu.ua
 license: MIT
+version: "0.1"
+doi: 10.5281/zenodo.23402003
+date-released: 2026-10-15
 repository-code: "https://github.com/Dev-Nikita/spcrl"
 abstract: >-
   Code, pre-registrations, external campaign telemetry and result records for a

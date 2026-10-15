@@ -1,5 +1,7 @@
 # SP-CRL — Structural-Prior Causal Representation Learning
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23402003.svg)](https://doi.org/10.5281/zenodo.23402003)
+
 Research code, pre-registrations and raw records for a study of how a learner
 should use a **fallible structural description** of the system it is modelling.
 
@@ -107,6 +109,12 @@ causal graph, so structure-recovery metrics are reported on synthetic systems
 only. The raw telemetry of the first Kubernetes campaign was lost to an
 infrastructure failure after its analysis; its result records, campaign log,
 structural prior and diagnostics are here, its raw telemetry is not.
+
+## Archived version
+
+Release 0.1 is archived on Zenodo: <https://doi.org/10.5281/zenodo.23402003>.
+That DOI is the one cited in the manuscript's Data and Code availability
+statements.
 
 ## License
 
