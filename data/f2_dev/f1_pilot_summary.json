@@ -1,0 +1,142 @@
+{
+ "label": "pilot",
+ "cells": {
+  "new": 0,
+  "replication": 16,
+  "all": 16
+ },
+ "H-F2-1": {
+  "n_cells": 16,
+  "n_seeds": 10,
+  "est": 0.044375000000000005,
+  "lo": -0.0803125,
+  "hi": 0.173125,
+  "cells_used": "all",
+  "decision": "INCONCLUSIVE"
+ },
+ "S1_align_replication": {
+  "n_cells": 16,
+  "n_seeds": 10,
+  "est": 0.044375000000000005,
+  "lo": -0.08249999999999999,
+  "hi": 0.1703125
+ },
+ "S2_dose_slope": {
+  "n": 160,
+  "est": -0.03536051461131025,
+  "lo": -0.15961294839650855,
+  "hi": 0.09265784185818826,
+  "decision": "INCONCLUSIVE",
+  "curve": {
+   "0": {
+    "x": 0.0,
+    "top1": 0.378125
+   },
+   "1": {
+    "x": 0.159,
+    "top1": 0.3784375
+   },
+   "2": {
+    "x": 0.331,
+    "top1": 0.3875
+   },
+   "5": {
+    "x": 0.69,
+    "top1": 0.3471875
+   },
+   "7": {
+    "x": 0.838,
+    "top1": 0.3821875
+   },
+   "9": {
+    "x": 0.928,
+    "top1": 0.33375
+   }
+  }
+ },
+ "S3_identity": {
+  "n_cells": 16,
+  "n_seeds": 10,
+  "est": -0.053125000000000006,
+  "lo": -0.169375,
+  "hi": 0.07625,
+  "decision": "no meaningful identity benefit (SUPPORTED)"
+ },
+ "S4_published_contrasts": {
+  "total P1-P5": {
+   "n_cells": 16,
+   "n_seeds": 10,
+   "est": 0.1625,
+   "lo": 0.015625,
+   "hi": 0.3125
+  },
+  "identity P1-P6": {
+   "n_cells": 16,
+   "n_seeds": 10,
+   "est": -0.096875,
+   "lo": -0.2375,
+   "hi": 0.0375
+  },
+  "alignment P2-P3b": {
+   "n_cells": 16,
+   "n_seeds": 10,
+   "est": 0.2625,
+   "lo": 0.08125,
+   "hi": 0.4625
+  },
+  "density P1-P3": {
+   "n_cells": 16,
+   "n_seeds": 10,
+   "est": 0.096875,
+   "lo": -0.025,
+   "hi": 0.21875
+  },
+  "degree P1-P4": {
+   "n_cells": 16,
+   "n_seeds": 10,
+   "est": 0.00625,
+   "lo": -0.2125,
+   "hi": 0.23125
+  }
+ },
+ "S5_hard": {
+  "spcrl_hard_strict": {
+   "n_cells": 16,
+   "n_seeds": 10,
+   "est": 0.161875,
+   "lo": 0.05375,
+   "hi": 0.29281250000000003
+  },
+  "spcrl_hard": {
+   "n_cells": 16,
+   "n_seeds": 10,
+   "est": 0.290625,
+   "lo": 0.14125000000000001,
+   "hi": 0.44749999999999995
+  }
+ },
+ "S6_structure_P2_vs_P3b": {
+  "n_cells": 16,
+  "n_seeds": 10,
+  "est": 0.2625,
+  "lo": 0.078125,
+  "hi": 0.465625,
+  "decision": "SUPPORTED"
+ },
+ "S7_channels_under_strict_hard": {
+  "n_cells": 16,
+  "n_seeds": 10,
+  "est": 0.161875,
+  "lo": 0.05343749999999999,
+  "hi": 0.29375,
+  "decision": "SUPPORTED"
+ },
+ "E3a_relabel_invariance": {
+  "anomaly_no_structure": "1920/1920 rankings unchanged",
+  "spcrl_none": "1920/1920 rankings unchanged",
+  "spcrl_hard": "1423/1920 rankings unchanged",
+  "spcrl_soft": "1920/1920 rankings unchanged",
+  "spcrl_hard_strict": "1920/1920 rankings unchanged",
+  "prior_only": "1920/1920 rankings unchanged"
+ }
+}

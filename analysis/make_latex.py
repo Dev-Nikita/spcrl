@@ -74,6 +74,8 @@ def inline(s: str) -> str:
             return "\\cite{" + ",".join(keys) + "}"
 
         p = re.sub(r"\[@[^\]]*\]", _cite, p)
+        # bare pandoc-style "@key" used as a noun ("in the sense of @lowe2022")
+        p = re.sub(r"(?<![\w\\])@([A-Za-z][\w:.-]*)", r"\\cite{\1}", p)
         p = re.sub(r"\*\*(.+?)\*\*", r"\\textbf{\1}", p)
         p = re.sub(r"(?<![\w*])\*([^*]+)\*(?![\w*])", r"\\emph{\1}", p)
         p = re.sub(r"`([^`]+)`", r"\\texttt{\1}", p)

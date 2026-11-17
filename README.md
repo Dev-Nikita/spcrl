@@ -1,6 +1,6 @@
 # SP-CRL — Structural-Prior Causal Representation Learning
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23402003.svg)](https://doi.org/10.5281/zenodo.23402003)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23403953.svg)](https://doi.org/10.5281/zenodo.23403953)
 
 Research code, pre-registrations and raw records for a study of how a learner
 should use a **fallible structural description** of the system it is modelling.
@@ -112,7 +112,7 @@ structural prior and diagnostics are here, its raw telemetry is not.
 
 ## Archived version
 
-Release 0.1 is archived on Zenodo: <https://doi.org/10.5281/zenodo.23402003>.
+Release 0.1.1 is archived on Zenodo: <https://doi.org/10.5281/zenodo.23403953>.
 That DOI is the one cited in the manuscript's Data and Code availability
 statements.
 

@@ -1,0 +1,45 @@
+{
+  "run_id": "4c50aedfa682",
+  "provenance": {
+    "git_commit": "2546f1259f092ae53a6a471b1a0234d80b715500",
+    "git_dirty": true,
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v553-x86_64-with-glibc2.39",
+    "numpy": "2.5.3",
+    "torch": "2.15.0+cpu",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1",
+    "timestamp": "2026-11-17T17:03:07+0000"
+  },
+  "config": {
+    "data": "data/external/free5gc_f1",
+    "env_name": "f1_pilot",
+    "priors": "/home/claude/spcrl-f2/data/f2_frozen/f2_priors.npz",
+    "manifest": "/home/claude/spcrl-f2/docs/preregistration/F2_PRIORS_MANIFEST.json",
+    "only": null,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relabel": 3,
+    "relabel_priors": [
+      "P2_semantic",
+      "P1_topology"
+    ],
+    "n_train": 400,
+    "n_val": 60,
+    "train_corruption": 0.2,
+    "parents_per_node": 3,
+    "no_train": false,
+    "model_dir": "/home/claude/spcrl-f2/data/f2_frozen/models",
+    "out": "results/e19_f1_pilot.jsonl"
+  }
+}
